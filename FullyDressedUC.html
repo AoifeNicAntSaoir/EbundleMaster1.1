@@ -5,9 +5,17 @@
     <meta charset='utf-8'>
       
   <style type="text/css" >
+  body{
+  font-family: "Arial" ,sans-serif;
+  }    
+  table{
+  width: 70%;
+  margin-left: 15%;
+  }
     table, th, td {
       border: 1px solid black;
       border-collapse: collapse;
+      padding: 5px;
     }
     
     h1{
@@ -51,13 +59,31 @@
                 <li>The customer goes into the EbundleSystem website and requests to log in</li>
             </ol>
     </td></tr>
+    <tr><td>Alternative Scenario</td><td>
+            <ol>
+                  <li>Invalid password: customer is asked to re-enter their password.</li> 
+                  <li>Invalid email: customer asked to enter a valid email address with username @ server . ext </li>
+                  <li>Existing account: if a customer's email address is already associated with an existing 
+                      account, they are brought to the log-in page</li>
+                  <li>Validation Link Expires: need to try to log in again & go through forgot password process</li>
+            </ol>
+    </td></tr>
     <tr><td>Conclusions</td><td>A customer creates an account with EbundleSystem</td></tr>
     <tr><td>Post Conditions</td><td>A customer can only create one account with 
                                     one email address</td></tr>
-    <tr><td>Business Rules</td><td>A customer can only create one account with 
-                                    one email address</td></tr>
+    <tr><td>Business Rules</td><td>
+              <ul>
+                  <li>A customer can only create one account with one email address</li>
+                  <li>Validation link for validating new account only exists for 24 hours</li>
+              </ul>
+  </td></tr>
     <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
 </table>
+
+
+<br><br><br><br>
+
+
 
 <h2>4.Search for concert/performance date</h2>
 <table>
@@ -67,21 +93,130 @@
     <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
     <tr><td>Primary Business Actory</td><td> Customer </td></tr>
     <tr><td>Other Participating Actors</td><td><!--Text Here--> </td></tr>
-    <tr><td>Description</td><td>Customer search for available concert and 
-                                or performance genre  </td></tr>
+    <tr><td>Description</td><td>Customer search for dates of concerts/performances</td></tr>
     <tr><td>Preconditions</td><td> A customer must have an account and be logged in</td></tr>
     <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
     <tr><td>Typical Scenario</td><td>
             <ol>
-                <li>A customer requests </li>
+                <li>A customer requests the search concert/performance date option </li>
+                <li>The system determines the current date and select all the concerts
+                      /performances for up to 6 months in advance</li>
+                <li>The customer can look at the events</li>
+                <li>The customer can also specify a certain date, month of time to filter concerts</li>
+                <li>The customer chooses to look at concerts</li>
             </ol>
     </td></tr>
-    <tr><td>Conclusions</td><td>A customer searches from events/performance and 
-                                selects an event to view</td></tr>
-    <tr><td>Post Conditions</td><td>A customer searches for concerts/performance dates</td></tr>
-    <tr><td>Business Rules</td><td>  </td></tr>
+      <tr><td>Alternative Scenario</td><td>
+            <ol>
+                <li>No concerts/performances available on date specified: The system returns with an error message &
+                      suggests other events</li>
+                <li>Filtered dates do not return a search: The systems suggests other events</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer is able to search for events on a specified date</td></tr>
+    <tr><td>Post Conditions</td><td>A customer can select a concert/perfomance to purchase tickets for etc.</td></tr>
+    <tr><td>Business Rules</td><td>
+          <ul>
+              <li>The system will only bring up events 6 months in advance</li>
+              <li>The system cannot bring up bygone events</li>
+          </ul>
+     </td></tr>
     <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
 </table>
 
+
+<br><br><br><br>
+
+
+
+<h2>5.Search for concert/performance location</h2>
+<table>
+    <tr><th>Use Case Name:</th><th>Search for concert/performance location</th></tr>
+    <tr><td>Use Case Id </td><td> 5</td></tr>
+    <tr><td>Priority</td><td> 5</td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td><!--Text Here--> </td></tr>
+    <tr><td>Description</td><td>Customer searches for locations of concerts/performances</td></tr>
+    <tr><td>Preconditions</td><td> A customer must have an account and be logged in</td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>A customer requests the search concert/performance location option </li>
+                <li>The system determines the locations of all the concert venues</li>
+                 <li>The system determines the current date and the customers location.
+                      The system then selects all the concerts/performances for up to 6
+                       months in advance in the country of the user</li>
+                <li>The customer can look at the events</li>
+                <li>The customer can also specify a certain location</li>
+                <li>The customer chooses to look at concerts</li>
+            </ol>
+    </td></tr>
+      <tr><td>Alternative Scenario</td><td>
+            <ol>
+                <li>No concerts/performances available in location specified: The system returns 
+                    with an error message & suggests other events</li>
+                <li>Filtered locations do not return a search: The systems suggests other events in
+                nearby locations</li>
+                <li>The system cannot determine the customers location</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer is able to search for events in specific locations</td></tr>
+    <tr><td>Post Conditions</td><td>A customer can select a concert/perfomance to purchase tickets for etc.</td></tr>
+    <tr><td>Business Rules</td><td>
+          <ul>
+              <li>The system will only bring up events 6 months in advance</li>
+              <li>The system cannot bring up bygone events</li>
+          </ul>
+     </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+</table>
+
+<br><br><br><br>
+
+
+
+<h2>7.Search for transport</h2>
+<table>
+    <tr><th>Use Case Name:</th><th>Search transport</th></tr>
+    <tr><td>Use Case Id </td><td> 7</td></tr>
+    <tr><td>Priority</td><td> 7</td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td><!--Text Here--> </td></tr>
+    <tr><td>Description</td><td>Customer searches for ltransport</td></tr>
+    <tr><td>Preconditions</td><td> A customer must have an account and be logged in</td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>A customer requests search for transport option </li>
+                <li>The system determines the customers location & brings up different
+                    forms of transport nearby</li>
+                <li>The system requests the user to enter the date and location of departure & arrival</li>
+                <li>The system finds all different forms of transport with the corresponding costs, times
+                 on that date doing fitting as close as possible with the customer's requirements</li>
+                <li>The customer chooses a form of transport</li>
+            </ol>
+    </td></tr>
+      <tr><td>Alternative Scenario</td><td>
+            <ol>
+                <li>No transport available in location specified: The system returns 
+                    with the nearest available transport to the specified location</li>
+                <li>Filtered locations do not return a search: The systems suggests other events in
+                nearby locations</li>
+                <li>The system cannot determine the customers location</li>
+                <li>The customer chooses not to purchase a transport option</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer is able to search for events on a specified date</td></tr>
+    <tr><td>Post Conditions</td><td>A customer can book transport</td></tr>
+    <tr><td>Business Rules</td><td>
+          <ul>
+              <li>The system will only bring up events 6 months in advance</li>
+              <li>The system cannot bring up bygone events</li>
+          </ul>
+     </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+</table>
   </body>
 </html>

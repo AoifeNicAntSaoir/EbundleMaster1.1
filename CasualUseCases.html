@@ -26,7 +26,12 @@ Alternative Scenario:
 Use Case Number: 4    <br>
 Use Case Name: Search for concert/performance date      <br>
 Success: Customer is able to find date of a concert/performance    <br>
-Alternative Scenario: Date not available: customer must choose another date     <br>
+Alternative Scenario:<br>
+<ul>
+       <li>No concerts/performances available on date specified: The system returns with an error message & suggests other events</li>
+       <li>Filtered dates do not return a search: The systems suggests other events</li>
+       <li>The customer chooses not to look at concert event: The system does nothing else</li>
+</ul>
 
 <h2>UC 5: Search for concert/performance location</h2>
 

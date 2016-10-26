@@ -39,7 +39,7 @@
     <tr><td>Priority</td><td> 1 </td></tr>
     <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
     <tr><td>Primary Business Actory</td><td> Customer </td></tr>
-    <tr><td>Other Participating Actors</td><td> Database Administrator</td></tr>
+    <tr><td>Other Participating Actors</td><td> System</td></tr>
     <tr><td>Description</td><td>A Customer identified a ticket he/she wishes to purchase.</td></tr>
     <tr><td>Preconditions</td><td> A customer must log on first to make a purchase.</td></tr>
     <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
@@ -50,7 +50,14 @@
                 <li>Customer goes to checkout.</li>
                 <li>Customer reviews their items.</li>
                 <li>Customer selects pay now option.</li>
+                <li>The system displays confirmation UI</li>
                 <li>The system sends email confirmation of payment and eTicket to the customers regiestered email address.</li>
+            </ol>
+    </td></tr>
+    <tr><td>Alternate Scenario</td><td>
+            <ol>
+                <li>When tickets has been sold out, the customer will have to search for another concert/performance ticket or exit the system.</li>
+                <li>When a concert/performance has been cancelled customer will have to search for another concert/performance ticket or exit the system.</li>
             </ol>
     </td></tr>
     <tr><td>Conclusions</td><td>A customer made a purchase at EBundleMaster.</td></tr>
@@ -59,6 +66,132 @@
     <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
 
 </table>
+
+<h2>UC8: Book Transport</h2>
+
+<table>
+    <tr><th>Use Case Name:</th><th>Book Transport</th></tr>
+    <tr><td>Use Case Id </td><td> 8 </td></tr>
+    <tr><td>Priority</td><td> 1 </td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td> System</td></tr>
+    <tr><td>Description</td><td>Customer books transport to the concert venue.</td></tr>
+    <tr><td>Preconditions</td><td> Customer must log on first to make a booking.</td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>Customer log on to their account.</li>
+                <li>Customer selects a type of transportation(Bus/Train).</li>
+                <li>Customer selects time, date and location.</li>
+                <li>Customer adds selected transportation to basket.</li>
+                <li>Customer selects pay now option.</li>
+                <li>The system displays confirmation UI</li>
+                <li>The system sends email confirmation of payment and eTicket to the customers regiestered email address.</li>
+            </ol>
+    </td></tr>
+    <tr><td>Alternate Scenario</td><td>
+            <ol>
+                <li>The chosen type of transport is unavailable,in which case the customer must choose another type of transport or exit.</li>
+                <li>The customer does not want to book transport, in which the customer can exit the system .</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer booked transportation at EBundleMaster.</td></tr>
+    <tr><td>Post Conditions</td><td> Customer recieves email confirmation of purchase.</td></tr>
+    <tr><td>Business Rules</td><td>
+            <ol>
+                <li>Customer must have an account.</li>
+                <li>Customer must log on to make a booking.</li>
+                <li>In order to purchase transport ticket, customer must purchase a concert/performance ticket.</li>
+            </ol>
+    </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+
+</table>
+<h2>UC11: Search Hotel Rooms</h2>
+
+<table>
+    <tr><th>Use Case Name:</th><th>Search Hotel Rooms</th></tr>
+    <tr><td>Use Case Id </td><td> 11 </td></tr>
+    <tr><td>Priority</td><td> 1 </td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td> System</td></tr>
+    <tr><td>Description</td><td>Customer can search for available hotel room.</td></tr>
+    <tr><td>Preconditions</td><td> Customer must log on first to search hotel rooms.</td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>Customer invokes search for hotel rooms option</li>
+                <li>The system determines the customers location and brings up different hotels nearby.</li>
+                <li>The system requests the user to enter number of people, the check in and out time and date.</li>
+                <li>The system finds all different hotels based on requirements the customer has entered.
+                <li>Customer chooses hotel.</li>
+            </ol>
+    </td></tr>
+    <tr><td>Alternate Scenario</td><td>
+            <ol>
+                <li>The system unable to determine customer location </li>
+                <li>No available hotels nearby.</li>
+                <li>The system unable to find hotels to match the customer requirements.</li>
+                <li>Customer chooses not to book hotel room.</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer is able to search for hotel rooms.</td></tr>
+    <tr><td>Post Conditions</td><td> Customer can book hotel rooms.</td></tr>
+    <tr><td>Business Rules</td><td>
+            <ol>
+                <li>Customer must have an account.</li>
+                <li>Customer must log on to make a purchase.</li>
+                <li>In order to book hotel, customer must purchase a concert/performance ticket.</li>
+            </ol>
+    </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+
+</table>
+
+<h2>UC12: Book Hotel</h2>
+
+<table>
+    <tr><th>Use Case Name:</th><th>Book Hotel</th></tr>
+    <tr><td>Use Case Id </td><td> 12 </td></tr>
+    <tr><td>Priority</td><td> 1 </td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td> System</td></tr>
+    <tr><td>Description</td><td>Customer books the available hotel room.</td></tr>
+    <tr><td>Preconditions</td><td> Customer must log on first to book hotel.</td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>Customer invokes book hotel rooms option</li>
+                <li>Customer selects book now </li>
+                <li>The system displays payment UI.</li>
+                <li>The system requests customer to enter credit card details.</li>
+                <li>The system validates credit card number(number must all be numeric and have 12 numbers).
+                <li>The system displays successfully confirmation UI</li>
+                <li>The system sends email confirmation</li>
+            </ol>
+    </td></tr>
+    <tr><td>Alternate Scenario</td><td>
+            <ol>
+                <li></li>
+                <li>invalid credit card details.</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer is able to search for hotel rooms.</td></tr>
+    <tr><td>Post Conditions</td><td> Customer can book hotel rooms.</td></tr>
+    <tr><td>Business Rules</td><td>
+            <ol>
+                <li>Customer must have an account.</li>
+                <li>Customer must log on to make a purchase.</li>
+                <li>In order to book hotel, customer must purchase a concert/performance ticket.</li>   
+            </ol>
+    </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+
+</table>
+
 
   </body>
 </html>

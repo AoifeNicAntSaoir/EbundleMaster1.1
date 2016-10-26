@@ -13,9 +13,14 @@
 Use Case Number: 1       <br>
 Use Case Name: Account Sign-Up    <br>
 Success: Customer successfully creates their account<br>
-Alternative Scenario: A customer already has an existing account with an email address  <br>
-Invalid password: customer is asked to re-enter their password.     <br>
-Invalid email: customer asked to enter a valid email address with username @ server . ext  <br>
+Alternative Scenario: 
+<ul>
+        <li>Existing Account: A customer already has an existing account with the corresponding email address</li> 
+        <li>The system cannot generate a unique user ID number - outputs an error message to the user</li> 
+        <li>Invalid password: customer is asked to re-enter their password.</li>    
+        <li>Invalid email: The system asks the customer to enter a valid email address in the format: username @ domain .ext </li>
+        <li>Validation link expires - the customer must go through a <strong>forgot password process</strong> again</li>
+</ul>
 
 <h2>UC 4: Search for concert/performance date</h2>
 Use Case Number: 4    <br>

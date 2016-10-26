@@ -69,10 +69,14 @@
     <tr><td>Post Conditions</td><td>customer can now purchase or book concert ticket </td></tr>
     <tr><td>Business Rules</td><td>
 			<ol>
-			      <li>customer must already signed up for account </li> 
+			      <li>customer must already signed up for an account </li> 
             </ol>
   </td></tr>
     <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+			<ol>
+			      <li>Email Validation</li>
+				  <li>Password Validation</li>
+            </ol>
 </table>
 
 <br><br><br><br>
@@ -125,12 +129,17 @@
     <tr><td>Typical Scenario</td><td>
             <ol>
                 <li>Customer invokes search restaurant function</li>
-				<li>The system displays the available restaurant</li>
+				<li>The system displays a list of cuisine type, i.e. chinese, italian, french etc.</li>
+				<li>Customer selects the cuisine type</li>
+				<li>The system displays a list of restaurant </li>
+				
             </ol>
     </td></tr>
     <tr><td>Alternative Scenario</td><td>
             <ol>
-			     <li>Restaurant not available: customer must choose another restaurant </li>
+			     <li>No restauarnt available to this cuisine type: customer must choose another cuisine</li>
+				 <li>Date not available: customer must choose another date </li>
+				 <li>Time not available: customer must choose another time </li>
 				 <li>Quit: customer does not want to search for restaurant and quits the system.</li> 
             </ol>
     </td></tr>
@@ -158,10 +167,6 @@
     <tr><td>Typical Scenario</td><td>
             <ol>
                 <li>Customer invokes the book restaurant function</li>
-				<li>The system displays the available date </li>
-				<li>Customer select the date</li>
-				<li>The system displays the available time</li>
-				<li>Customer select the time</li>
 				<li>Customer Confirms they want to make a booking</li>
 				<li>The system confirms booking has been made</li>
 				
@@ -169,8 +174,7 @@
     </td></tr>
     <tr><td>Alternative Scenario</td><td>
             <ol>
-			    <li>Date not available: customer must choose another date </li>
-				<li>Time not available: customer must choose another time </li>
+			    
             </ol>
     </td></tr>
     <tr><td>Conclusions</td><td>customer successfully booked a table at their choosen restaurant  </td></tr>

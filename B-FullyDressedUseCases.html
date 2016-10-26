@@ -25,6 +25,11 @@
     h1{
     text-align: center;
     }
+	
+	h2{
+    text-align: center;
+    }
+	
    </style>  
   </head>
   <body>
@@ -38,13 +43,13 @@
 <table>
     <tr><th>Use Case Name:</th><th>Account Log-In</th></tr>
     <tr><td>Use Case Id </td><td> 2 </td></tr>
-    <tr><td>Priority</td><td> 2 </td></tr>
+    <tr><td>Priority</td><td> 1 </td></tr>
     <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
-    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Primary Business Actor</td><td> Customer </td></tr>
     <tr><td>Other Participating Actors</td><td> System Administrator</td></tr>
-    <tr><td>Description</td><td> A customer needs to log into their account in order to book 
+    <tr><td>Description</td><td>customer needs to log into their account in order to book 
 								purhcase ticket.</td></tr>
-    <tr><td>Preconditions</td><td> A customer must already have signed up for an account</td></tr>
+    <tr><td>Preconditions</td><td>customer must already have signed up for an account</td></tr>
     <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
     <tr><td>Typical Scenario</td><td>
             <ol>
@@ -60,28 +65,33 @@
                   <li>Invalid password: customer is asked to re-enter their password.</li> 
             </ol>
     </td></tr>
-    <tr><td>Conclusions</td><td>A customer log into their account</td></tr>
-    <tr><td>Post Conditions</td><td>A customer can now purchase or book concert ticket </td></tr>
+    <tr><td>Conclusions</td><td>customer log into their account</td></tr>
+    <tr><td>Post Conditions</td><td>customer can now purchase or book concert ticket </td></tr>
     <tr><td>Business Rules</td><td>
+			<ol>
+			      <li>customer must already signed up for account </li> 
+            </ol>
   </td></tr>
     <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
 </table>
+
+<br><br><br><br>
 
 <h2>3. Search for concert/performance genre </h2>
  <!--Use the table bellow as a template for the fully dressed use cases-->
 <table>
     <tr><th>Use Case Name:</th><th>Search for concert/performance genre</th></tr>
     <tr><td>Use Case Id </td><td> 3 </td></tr>
-    <tr><td>Priority</td><td> 3 </td></tr>
+    <tr><td>Priority</td><td> 1 </td></tr>
     <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
-    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Primary Business Actor</td><td> Customer </td></tr>
     <tr><td>Other Participating Actors</td><td> System Administrator</td></tr>
-    <tr><td>Description</td><td> Customer is able to find the genre of a concert/performance.</td></tr>
+    <tr><td>Description</td><td> Customer search for available concert and or performance genre</td></tr>
     <tr><td>Preconditions</td><td></td></tr>
     <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
     <tr><td>Typical Scenario</td><td>
             <ol>
-                <li>Customer selects the genre of the concert/performance</li>
+                <li>Customer invokes the search for concert/performance genre</li>
 				<li>The system displays the available concerts/performances according to the selected genre</li>
             </ol>
     </td></tr>
@@ -91,9 +101,84 @@
                   <li>Quit: customer does not want to search concert genre and quits the system.</li> 
             </ol>
     </td></tr>
-    <tr><td>Conclusions</td><td>A customer is able for a particular genre of concert/performance </td></tr>
-    <tr><td>Post Conditions</td><td>A customer can now select location or date of concert/performance </td></tr>
+    <tr><td>Conclusions</td><td>customer is able for a particular genre of concert/performance </td></tr>
+    <tr><td>Post Conditions</td><td>customer can now select location or date of concert/performance </td></tr>
     <tr><td>Business Rules</td><td>
+  </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+</table>
+
+<br><br><br><br>
+
+<h2>9. Search for Restaurant </h2>
+ <!--Use the table bellow as a template for the fully dressed use cases-->
+<table>
+    <tr><th>Use Case Name:</th><th>Search for Restaurant</th></tr>
+    <tr><td>Use Case Id </td><td> 9 </td></tr>
+    <tr><td>Priority</td><td> 1 </td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actor</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td> System Administrator</td></tr>
+    <tr><td>Description</td><td> Customesearch for the available restaurants</td></tr>
+    <tr><td>Preconditions</td><td></td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>Customer invokes search restaurant function</li>
+				<li>The system displays the available restaurant</li>
+            </ol>
+    </td></tr>
+    <tr><td>Alternative Scenario</td><td>
+            <ol>
+			     <li>Restaurant not available: customer must choose another restaurant </li>
+				 <li>Quit: customer does not want to search for restaurant and quits the system.</li> 
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>customer is able to see the list of available restaurants </td></tr>
+    <tr><td>Post Conditions</td><td>customer can book at table at the selected restaurant </td></tr>
+    <tr><td>Business Rules</td><td>
+  </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+</table>
+
+<br><br><br><br>
+
+<h2>10. Book Restaurant</h2>
+ <!--Use the table bellow as a template for the fully dressed use cases-->
+<table>
+    <tr><th>Use Case Name:</th><th>Book Restaurant</th></tr>
+    <tr><td>Use Case Id </td><td> 10 </td></tr>
+    <tr><td>Priority</td><td> 1 </td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actor</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td> System Administrator</td></tr>
+    <tr><td>Description</td><td> Customer makes a restaurant booking </td></tr>
+    <tr><td>Preconditions</td><td>Customer must log into their account </td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>Customer invokes the book restaurant function</li>
+				<li>The system displays the available date </li>
+				<li>Customer select the date</li>
+				<li>The system displays the available time</li>
+				<li>Customer select the time</li>
+				<li>Customer Confirms they want to make a booking</li>
+				<li>The system confirms booking has been made</li>
+				
+            </ol>
+    </td></tr>
+    <tr><td>Alternative Scenario</td><td>
+            <ol>
+			    <li>Date not available: customer must choose another date </li>
+				<li>Time not available: customer must choose another time </li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>customer successfully booked a table at their choosen restaurant  </td></tr>
+    <tr><td>Post Conditions</td><td>customer can invoke other functions such as search hotel, book transport </td></tr>
+    <tr><td>Business Rules</td><td>
+			<ol>
+			    <li>Customer must log into their account </li>
+            </ol>
   </td></tr>
     <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
 </table>

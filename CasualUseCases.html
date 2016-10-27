@@ -33,8 +33,20 @@ Alternative Scenario:
         <li>Validation link expires - the customer must go through a <strong>forgot password process</strong> again</li>
 </ul>
 
-<h2>UC 4: Search for concert/performance date</h2>
-Use Case Number: 4    <br>
+<h2>UC ID 5: Search for Concert </h2>
+Use Case ID: 5    <br>
+Use Case Name: Search for Concert    <br>
+Success: Customer successfully able to search for a concert & thereafter is able to search concert performance genre, date, or location<br>
+Alternative Scenario: 
+<ul>
+        <li>No concert: The system returns with an error message </li> 
+        <li>No concerts of specified genre: The system returns with an error message & brings up other concerts genres </li> 
+        <li>No concert on date specified: The system returns with an error message & brings up other concerts dates close to the specified date </li>    
+        <li>No concert in location specified: The system returns with an error message & brings up other concerts locations </li>
+</ul>
+
+<h2>UC 5.1: Search for concert/performance date</h2>
+Use Case Number: 5.1    <br>
 Use Case Name: Search for concert/performance date      <br>
 Success: Customer is able to find date of a concert/performance    <br>
 Alternative Scenario:<br>
@@ -44,7 +56,7 @@ Alternative Scenario:<br>
        <li>The customer chooses not to look at concert event: The system does nothing else</li>
 </ul>
 
-<h2>UC 5: Search for concert/performance location</h2>
+<h2>UC 5.2: Search for concert/performance location</h2>
 
 Use Case Number: 5           <br>
 Use Case Name: Search for concert/performance location   <br>
@@ -53,10 +65,10 @@ Alternative Scenario:   Location not available: customer must choose another loc
 
 <br>
 
-<h2>UC 7: Search for Transport</h2>
-Use Case Number: 7    <br>
+<h2>UC 8: Search for Transport</h2>
+Use Case Number: 8   <br>
 Use Case Name: Search for Transport   <br>
-Description: A customer  needs to choose:     <br>
+Description: A customer can choose:     <br>
 <ul>
 <li>Type of Transport</li>
 <li>Date & time of departure </li>
@@ -66,9 +78,64 @@ Description: A customer  needs to choose:     <br>
 </ul>
 Alternative Scenario: 
 <ul>
-      <li>No Transport for selected options chosen</li>
-      <li>No transport options are available </li>
+      <li>No Transport for selected options chosen - shows up an error message</li>
+      <li>No transport options are available - shows up an error message</li>
 </ul>
+
+<h3>UC 8.1: - Search for transport  type  </h3> 
+Use Case Number: 8.1    <br>
+Use Case Name: Search for transport type   <br>
+Description: A customer  chooses between bus, car, train, aeroplane or none of the above <br> 
+Alternative Scenario: 
+<ul>
+      <li>A customer chooses no transport option - all transport type possibilites show up</li>
+      <li>No transport options are available - the system shows up an error message</li>
+</ul> 
+
+<br><br>
+
+<h3>UC ID 8.2  - Select date/timetable  </h3>
+ Use Case Number: 8.2   <br>
+Use Case Name: Search for date/timetable     <br>
+Description: A customer  chooses particular date/timetable <br>  
+Alternative Scenario: 
+<ul>
+      <li>A customer chooses no date/timetable option -all timetables appear for the transport type specified</li>
+      <li>No timetable/dates are available - the system shows up an error message</li>
+</ul> 
+
+
+<br><br>
+
+<h3>UC ID 8.3  - Select arrival location </h3>
+ Use Case Number: 8.3   <br>
+Use Case Name: Search arrival location    <br>
+Description: A customer chooses an arrival location for their transport of choice <br> 
+Alternative Scenario: 
+<ul>
+      <li>A customer chooses no arrival location - the system shows up an error message</li>
+      <li>The date available does not arrive in the arrival location - the system shows up an error 
+          message & brings up other arrival locations on the date specified </li>
+</ul>  
+
+ <br><br>
+
+<h3>UC ID 8.4  - Select departure location </h3>
+ Use Case Number: 8.4  <br>
+Use Case Name: Search departure location    <br>
+Description: A customer chooses a departure location for their transport of choice <br> 
+Alternative Scenario: 
+<ul>
+      <li>A customer chooses no departure location - the system shows up an error message</li>
+      <li>The date available does not arrive in the departure location - the system shows up an error 
+          message & brings up other departure locations on the date specified </li>
+</ul>  
+
+
+  
+
+
+
 
   </body>
 </html>

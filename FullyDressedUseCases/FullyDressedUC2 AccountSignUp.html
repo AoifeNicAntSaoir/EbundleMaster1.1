@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Fully Dressed Use Case ID 2. Account Sign Up </title>
+    <meta charset='utf-8'>
+      
+  <style type="text/css" >
+  body{
+  font-family: "Arial" ,sans-serif;
+  }    
+  table{
+  width: 70%;
+  margin-left: 15%;
+  }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    
+    h1{
+    text-align: center;
+    }
+    
+    h1{
+    text-align: center;
+    }
+   </style>  
+  </head>
+  <body>
+  
+  <h1>Fully Dressed Use Case:</h1> 
+
+ <!--Begin - Fully Dresses Use Cases-->  
+ 
+<h2>UC ID 2. Account Sign up </h2>
+ <!--Use the table bellow as a template for the fully dressed use cases-->
+<table>
+    <tr><th>Use Case Name:</th><th>Account Sign Up</th></tr>
+    <tr><td>Use Case Id </td><td> 2 </td></tr>
+    <tr><td>Priority</td><td> 2 </td></tr>
+    <tr><td>Level</td><td>User Goal</td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td> Database Administrator</td></tr>
+    <tr><td>Description</td><td> A customer  needs to create an account to in order 
+                                to purchase tickets from the E-ticketing system.</td></tr>
+    <tr><td>Preconditions</td><td> A customer must hold a valid email address</td></tr>
+    <tr><td>Stakeholders & Interests</td><td>
+                  <dl>
+                  <dt>Customer:</dt> 
+                              <dd>Wants to be able to create an account to purchase tickets on the Ebundle System </dd>
+                              <dd>Want to be able to see the bundle offers available to customers after signing up</dd>
+                              
+                  <dt>Company:</dt>
+                               <dd>Wants to draw in more customers to increase revenue for the company</dd>
+                  <dt>Database Administrator:</dt>
+                                <dd> Wants to be able to track users easily if any issues may arise</dd>  
+                  </dl>  
+    </td></tr>
+    <tr><td>Typical Scenarios</td><td>
+            <ol>
+                <li>A customer requests a sign up for the EbundleSystem on the Ebundle System website.</li>
+                <li>The system prepares a form for sign up</li>
+                <li>The customer inputs their email address, a username and a 
+                    strong password (Mixed case,    characters, letters and numbers)</li>
+                <li>The system validates the users details enetered & assigns the user a unique ID number</li>
+                <li>The system sends a confirmation email to the user's email address</li>
+                <li>The system tells the customer to check their email address to verify 
+                    their account with EbundleSystem </li>
+                <li>The customer goes to their email, clicks on the link to validate their email</li>
+                <li>The system creates an account for the customers details</li>
+                <li>The customer goes into the EbundleSystem website and requests to log in</li>
+            </ol>
+    </td></tr>
+    <tr><td>Extensions/ Alternative Scenarios</td><td>
+            <ul>  
+                  <li>System cannot retrieve the sign up form</li>
+                  <li>Invalid details</li>
+                      <ol>
+                        <li>System cannot generate User ID: raise an error </li>
+                        <li>Invalid password: customer is asked to re-enter their password.</li> 
+                        <li>Invalid email: customer asked to enter a valid email address with username @ server . ext </li>
+                        <li>Existing account: if a customer's email address is already associated with an existing 
+                        account, they are brought to the log-in page</li>
+                      </ol>
+                  <li>Validation Link Expires: need to try to log in again & go through forgot password process</li>
+            </ul>
+    </td></tr>
+    <tr><td>Conclusion</td><td>A customer creates an account with EbundleSystem</td></tr>
+    <tr><td>Post Conditions</td><td>Success: A customer creates an account with EbundleSystem<br>
+                                    Failure: A customer unable to sign up for one or more reasons.</td></tr>
+    <tr><td>Business Rules</td><td>
+              <ul>
+                  <li>A customer can only create one account with one email address</li>
+                  <li>Validation link for validating new account only exists for 24 hours</li>
+                  <li>A customers details must be valid before creating an account
+                        <ul>
+                              <li> Strong password - Mixed case Letters (A-Z / a-z), characters(!"£$% etc.),  and numbers (0-9) - cannot be null</li>
+                              <li> Valid email address -  local-part & @ & domain & .ext - cannot be null</li> 
+                              <li> Username - cannot be null</li>
+                              <li> User Identifier - generated by the System & must be unique</li>
+                        </ul>
+              </ul>
+  </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+</table>
+
+
+
+  </body>
+</html>

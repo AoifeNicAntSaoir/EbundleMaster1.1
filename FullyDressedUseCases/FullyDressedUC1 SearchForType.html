@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Fully Dressed Use Case ID 1. Search For Type </title>
+    <meta charset='utf-8'>
+      
+  <style type="text/css" >
+  body{
+  font-family: "Arial" ,sans-serif;
+  }    
+  table{
+  width: 70%;
+  margin-left: 15%;
+  }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    
+    h1{
+    text-align: center;
+    }
+    
+    h1{
+    text-align: center;
+    }
+   </style>  
+  </head>
+  <body>
+  
+<h1>Fully Dressed Use Case:</h1> 
+
+<h2>UC ID 1 Search Type</h2>
+<table>
+    <tr><th>Use Case Name:</th><th>Search Type</th></tr>
+    <tr><td>Use Case Id </td><td> 1 </td></tr>
+    <tr><td>Priority</td><td> 4</td></tr>
+    <tr><td>Level</td><td>User Goal</td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td>Company, Database Administrator </td></tr>
+    <tr><td>Description</td><td>Customer search for dates of concerts/performances</td></tr>
+    <tr><td>Preconditions</td><td> </td></tr>
+    <tr><td>Stakeholders & Interests</td><td>
+                  <dl>
+                  <dt>Customer:</dt> 
+                              <dd>Wants to be able to search for dates of events on the Ebundle System </dd>
+                              <dd>Wants to be able to see the dates of concerts/performances events</dd>                          
+                  <dt>Company:</dt>
+                               <dd>Wants customers to be able to see various events advertised up to six months from todays date</dd>
+                  <dt>Database Administrator:</dt>
+                                <dd> Wants to be able to select all dates for specific event periods</dd>  
+                  </dl>  
+    
+    </td></tr>
+    <tr><td>Typical Scenarios</td><td>
+            <ol>
+                <li>A customer requests the search concert/performance date option </li>
+                <li>The system determines the current date and select all the concerts
+                      /performances for up to 6 months in advance</li>
+                <li>The customer can also specify a certain date, month of time to filter concerts 6 months in advance of the concert/perfomance</li>
+                <li>The customer chooses to look at concerts</li>
+                <li>The customer can add an event to the bundle</li>
+            </ol>
+    </td></tr>
+      <tr><td>Extensions/ Alternative Scenarios</td><td>
+            <ol>
+                <li>No concerts/performances available on date specified: The system returns with an error message &
+                      suggests other events</li>
+                <li>Filtered dates do not return a search: The systems suggests other events</li>
+                <li>The customer chooses not to look at concert event: The system does nothing else</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer is able to search for events on a specified date & genre</td></tr>
+    <tr><td>Post Conditions</td><td>A customer can select a concert/perfomance to purchase tickets for etc.</td></tr>
+    <tr><td>Business Rules</td><td>
+          <ul>
+              <li>The system will only bring up events 6 months in advance</li>
+              <li>The system cannot bring up bygone events</li>
+          </ul>
+     </td></tr>
+    <tr><td>Implementation Constraints</td><td>Customer can now only choose from Concert, restaurant, hotel, transport</td></tr>
+</table>
+
+
+
+
+
+  </body>
+</html>

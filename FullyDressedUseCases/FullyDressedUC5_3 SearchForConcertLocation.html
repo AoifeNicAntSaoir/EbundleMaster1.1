@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Fully Dressed Use Case ID 5.3 Search for concert/performance location </title>
+    <meta charset='utf-8'>
+      
+  <style type="text/css" >
+  body{
+  font-family: "Arial" ,sans-serif;
+  }    
+  table{
+  width: 70%;
+  margin-left: 15%;
+  }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    
+    h1{
+    text-align: center;
+    }
+    
+    h1{
+    text-align: center;
+    }
+   </style>  
+  </head>
+  <body>
+  
+  <h1>Fully Dressed Use Case:</h1> 
+
+  
+<h2>UCID 5.3 Search for concert/performance location</h2>
+<table>
+    <tr><th>Use Case Name:</th><th>Search for concert/performance location</th></tr>
+    <tr><td>Use Case Id </td><td> 5.3</td></tr>
+    <tr><td>Priority</td><td> 5.3</td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td><!--Text Here--> </td></tr>
+    <tr><td>Description</td><td>Customer searches for locations of concerts/performances</td></tr>
+    <tr><td>Preconditions</td><td> A customer must have an account and be logged in</td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>A customer requests the search concert/performance location option </li>
+                <li>The system determines the locations of all the concert venues</li>
+                 <li>The system determines the current date and the customers location.
+                      The system then selects all the concerts/performances for up to 6
+                       months in advance in the country of the user</li>
+                <li>The customer can look at the events</li>
+                <li>The customer can also specify a certain location</li>
+                <li>The customer chooses to look at concerts</li>
+            </ol>
+    </td></tr>
+      <tr><td>Alternative Scenario</td><td>
+            <ol>
+                <li>No concerts/performances available in location specified: The system returns 
+                    with an error message & suggests other events</li>
+                <li>Filtered locations do not return a search: The systems suggests other events in
+                nearby locations</li>
+                <li>Bygone Date: The customer selects a bygone date. The system outputs and error warning</li>
+                <li>The system cannot determine the customers location. The system brings up all events in the same country</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer is able to search for events in specific locations</td></tr>
+    <tr><td>Post Conditions</td><td>Success: A customer can select a concert/perfomance to purchase tickets for etc.
+                                   <br>Failure: The system cannot bring up any events for a time period specified and suggests other event dates nearby</td></li>
+    </td></tr>
+    <tr><td>Business Rules</td><td>
+          <ul>
+              <li>The system will only bring up events 6 months in advance</li>
+              <li>The system cannot bring up bygone events</li>
+              <li>The system prioritises nearby events for a customer. Determines the customers IP address location</li>
+          </ul>
+     </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+</table>
+ 
+
+
+
+
+  </body>
+</html>

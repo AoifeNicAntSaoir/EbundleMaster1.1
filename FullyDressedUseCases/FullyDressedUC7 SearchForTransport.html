@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Fully Dressed Use Case ID 7. Search for transport</title>
+    <meta charset='utf-8'>
+      
+  <style type="text/css" >
+  body{
+  font-family: "Arial" ,sans-serif;
+  }    
+  table{
+  width: 70%;
+  margin-left: 15%;
+  }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    
+    h1{
+    text-align: center;
+    }
+    
+    h1{
+    text-align: center;
+    }
+   </style>  
+  </head>
+  <body>
+  
+  <h1>Fully Dressed Use Case:</h1> 
+
+  <h2>UC7.Search for transport</h2>
+<table>
+    <tr><th>Use Case Name:</th><th>Search transport</th></tr>
+    <tr><td>Use Case Id </td><td> 7</td></tr>
+    <tr><td>Priority</td><td> 7</td></tr>
+    <tr><td>Source</td><td><!--Text Goes in here--></td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td><!--Text Here--> </td></tr>
+    <tr><td>Description</td><td>Customer searches for ltransport</td></tr>
+    <tr><td>Preconditions</td><td> A customer must have an account and be logged in</td></tr>
+    <tr><td>Trigger</td><td><!--Text Here-->  <!--Text Here--></td></tr>
+    <tr><td>Typical Scenario</td><td>
+            <ol>
+                <li>A customer requests search for transport option </li>
+                <li>The system determines the customers location & brings up different
+                    forms of transport nearby</li>
+                <li>The system requests the user to enter the date and location of departure & arrival</li>
+                <li>The system finds all different forms of transport with the corresponding costs, times
+                 on that date doing fitting as close as possible with the customer's requirements</li>
+                <li>The customer chooses a form of transport</li>
+            </ol>
+    </td></tr>
+      <tr><td>Alternative Scenario</td><td>
+            <ol>
+                <li>No transport available in location specified: The system returns 
+                    with the nearest available transport to the specified location</li>
+                <li>Filtered locations do not return a search: The systems suggests other events in
+                nearby locations</li>
+                <li>The system cannot determine the customers location</li>
+                <li>The customer chooses not to purchase a transport option</li>
+            </ol>
+    </td></tr>
+    <tr><td>Conclusions</td><td>A customer is able to search for events on a specified date</td></tr>
+    <tr><td>Post Conditions</td><td>A customer can book transport</td></tr>
+    <tr><td>Business Rules</td><td>
+          <ul>
+              <li>The system will only bring up events 6 months in advance</li>
+              <li>The system cannot bring up bygone events</li>
+          </ul>
+     </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere--></td></tr>
+</table>
+  
+
+ 
+
+
+
+
+  </body>
+</html>

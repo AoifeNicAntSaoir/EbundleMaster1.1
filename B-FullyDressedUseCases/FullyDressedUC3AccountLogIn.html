@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Fully Dressed Use Cases</title>
+    <meta charset='utf-8'>
+      
+  <style type="text/css" >
+  body{
+  font-family: "Arial" ,sans-serif;
+  }    
+  table{
+  width: 70%;
+  margin-left: 15%;
+  }
+    table, th, td {
+      border: 1px solid black;
+      border-collapse: collapse;
+      padding: 5px;
+    }
+    
+    h1{
+    text-align: center;
+    }
+    
+    h1{
+    text-align: center;
+    }
+	
+	h2{
+    text-align: center;
+    }
+	
+   </style>  
+  </head>
+  <body>
+  
+<h1>Fully Dressed Use Case:</h1> 
+
+ <!--Begin - Fully Dresses Use Cases-->  
+ 
+<h2>3. Account Log-In </h2>
+ <!--Use the table bellow as a template for the fully dressed use cases-->
+<table>
+ <tr><th>Use Case Name:</th><th>Account Log In</th></tr>
+    <tr><td>Use Case Id </td><td> 3 </td></tr>
+    <tr><td>Priority</td><td> 1 </td></tr>
+    <tr><td>Level</td><td>User Goal</td></tr>
+    <tr><td>Primary Business Actory</td><td> Customer </td></tr>
+    <tr><td>Other Participating Actors</td><td> System Administrator</td></tr>
+    <tr><td>Description</td><td> Customer need to log into their account in order to confirm bookings.</td></tr>
+    <tr><td>Preconditions</td><td> Customer must already signed up for an account</td></tr>
+    <tr><td>Stakeholders & Interests</td><td>
+                  <dl>
+                  <dt>Customer:</dt> 
+                              <dd>Wants to be able to confirm bookings on the Ebundle System </dd>
+                              
+                  <dt>Company:</dt>
+                               <dd>Wants to draw in more customers to increase revenue for the company</dd>
+                  <dt>System Administrator:</dt>
+                                <dd> Wants to be able to track number of users using the system each day</dd>  
+                  </dl>  
+    </td></tr>
+    <tr><td>Typical Scenarios</td><td>
+            <ol>
+                <li>Customer enters the email address</li>
+                <li>Customer enters the password</li>
+				<li>The system valids the email and password</li>
+				<li>The system confirms customer has suceesfully log into their account</li>
+            </ol>
+    </td></tr>
+    <tr><td>Extensions/ Alternative Scenarios</td><td>
+            <ul>  
+                <li>Invalid password: customer is asked to re-enter their password.</li> 
+                <li>Invalid email: customer asked to re-enter their email address</li>
+				<li>Account does not exist: customer is asked to sign up for an account.</li>
+            </ul>
+    </td></tr>
+    <tr><td>Conclusion</td><td>customer successfully logs into their account</td></tr>
+    <tr><td>Post Conditions</td><td>customer can now confirm bookings or purchase concert tickets</td></tr>
+    <tr><td>Business Rules</td><td>
+			<ol>
+			      <li>One account per valid email</li> 
+            </ol>
+			
+    </td></tr>
+    <tr><td>Implementation Constraints</td><td><!--TextHere-->
+			<ol>
+			    <li>Email address Validation: check if email address match database record</li>
+				<li>Password Validation: check if password match database record</li>
+            </ol>
+	</td></tr>
+</table>
+
+<br><br><br><br>
+
+
+  </body>
+</html>

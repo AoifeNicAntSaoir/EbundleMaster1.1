@@ -6,13 +6,13 @@ package com.ooad.concert;
 public class Concert {
 
     private int concertID;
-    private String genre;
+    private Genre genre;
     private String venue;
     private String date;
     private String act;
     private String actDescription;
 
-    public Concert(int concertID, String genre, String venue,
+    public Concert(int concertID, Genre genre, String venue,
                    String date, String act, String actDescription) {
         this.concertID = concertID;
         this.genre = genre;
@@ -36,12 +36,12 @@ public class Concert {
         this.concertID = concertID;
     }
 
-    public String getGenre() {
+    public Genre getGenre() {
 
         return genre;
     }
 
-    public void setGenre(String genre) {
+    public void setGenre(Genre genre) {
 
         this.genre = genre;
     }

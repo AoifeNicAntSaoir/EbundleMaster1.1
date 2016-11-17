@@ -6,7 +6,7 @@ import sun.plugin2.message.Conversation;
  * Created by t00170881 on 17/11/2016.
  */
 public class ConcertCataglogue {
-    public List concerts;
+    private List<Concert> concerts;
 
     public ConcertCataglogue() {
         concerts = new LinkedList();

@@ -1,5 +1,7 @@
 package com.ooad.concert;
 
+import java.util.Date;
+
 /**
  * Created by Aoife Sayers on 17/11/2016.
  */
@@ -8,12 +10,12 @@ public class Concert {
     private int concertID;
     private Genre genre;
     private Venue venue;
-    private String date;
+    private Date date;
     private String act;
     private String actDescription;
 
     public Concert(int concertID, Genre genre, Venue venue,
-                   String date, String act, String actDescription) {
+                   Date date, String act, String actDescription) {
         this.concertID = concertID;
         this.genre = genre;
         this.venue = venue;
@@ -56,12 +58,12 @@ public class Concert {
         this.venue = venue;
     }
 
-    public String getDate() {
+    public Date getDate() {
 
         return date;
     }
 
-    public void setDate(String date) {
+    public void setDate(Date date) {
 
         this.date = date;
     }

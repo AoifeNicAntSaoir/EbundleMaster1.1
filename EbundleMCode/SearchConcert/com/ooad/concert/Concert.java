@@ -7,12 +7,12 @@ public class Concert {
 
     private int concertID;
     private Genre genre;
-    private String venue;
+    private Venue venue;
     private String date;
     private String act;
     private String actDescription;
 
-    public Concert(int concertID, Genre genre, String venue,
+    public Concert(int concertID, Genre genre, Venue venue,
                    String date, String act, String actDescription) {
         this.concertID = concertID;
         this.genre = genre;
@@ -46,12 +46,12 @@ public class Concert {
         this.genre = genre;
     }
 
-    public String getVenue() {
+    public Venue getVenue() {
 
         return venue;
     }
 
-    public void setVenue(String venue) {
+    public void setVenue(Venue venue) {
 
         this.venue = venue;
     }

@@ -9,7 +9,7 @@ public class ConcertCatalogue {
     }
 
 
-    public void addConcert(int concertID, Genre genre, String venue, String date, String act, String actDescription) {
+    public void addConcert(int concertID, Genre genre, Venue venue, String date, String act, String actDescription) {
         Concert newConcert = new Concert(concertID, genre, venue, date, act, actDescription);
         concerts.add(newConcert);
     }

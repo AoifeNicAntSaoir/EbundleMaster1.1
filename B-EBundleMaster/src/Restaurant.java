@@ -7,16 +7,16 @@ public class Restaurant
     private String restName;
     private String restType;
     private String restLocation;
-    private Date bookingDate;
+
 
     public Restaurant(String restID,String restName,String restType,
-                      String restLocation, Date bookingDate)
+                      String restLocation)
     {
         setRestID(restID);
         setRestName(restName);
         setRestType(restType);
         setRestLocation(restLocation);
-        setBookingDate(bookingDate);
+
     }
 
     public String getRestName() {
@@ -24,7 +24,7 @@ public class Restaurant
     }
 
     public void setRestName(String restName) {
-        RestName = restName;
+        restName = restName;
     }
 
     public String getRestType() {
@@ -50,15 +50,4 @@ public class Restaurant
     public void setRestID(String restID) {
         restID = restID;
     }
-
-    public Date getBookingDate() {
-        return bookingDate;
-    }
-
-    public void setBookingDate(Date bookingDate) {
-        this.bookingDate = bookingDate;
-    }
-
-
-
 }

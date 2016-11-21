@@ -7,14 +7,14 @@ import java.util.Date;
 //superClass
 public class Hotel {
 
-    String hotelId;
-    String nameOfHotel;
-    String street;
-    String town;
-    String county;
-    String roomType;
-    Date checkInDate;
-    Date checkOutDate;
+    private String hotelId;
+    private String nameOfHotel;
+    private String street;
+    private String town;
+    private String county;
+    private String roomType;
+    private Date checkInDate;
+    private Date checkOutDate;
 
     public Hotel(String hotelId, String nameOfHotel, String street, String town, String county, String roomType,
                   Date checkInDate, Date checkOutDate)  {

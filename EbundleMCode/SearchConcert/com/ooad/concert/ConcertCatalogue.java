@@ -10,7 +10,6 @@ public class ConcertCatalogue {
 
     public ConcertCatalogue(){
         concerts = new LinkedList();
-
     }
 
 
@@ -20,8 +19,9 @@ public class ConcertCatalogue {
     }
 
     public Concert getConcert(int concertID) {
-        for (Iterator i = concerts.iterator(); i.hasNext(); ) {
-            Concert guitar = (Concert) i.next();
+
+        for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
+            Concert guitar = i.next();
             if (guitar.getConcertID() == (concertID)) {
                 return concert;
             }
@@ -31,8 +31,8 @@ public class ConcertCatalogue {
 
 
     public Concert search(Concert searchConcert) {
-        for (Iterator i = concerts.iterator(); i.hasNext(); ) {
-            Concert guitar = (Concert) i.next();
+        for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
+            Concert guitar = i.next();
             // Ignore serial number since that's unique
             // Ignore price since that's unique
             String genre = concert.getGenre();
@@ -44,8 +44,6 @@ public class ConcertCatalogue {
                     (!venue.equals(venue.getVenue())))
                 continue;
             Concert c = new Concert();
-
-
             String act = c.getAct();
             if( (act != null) && (!act.equals("")) &&
                     (!act.equals(c.getAct())) )

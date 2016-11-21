@@ -24,7 +24,8 @@ public class Concert {
         this.actDescription = actDescription;
     }
 
-    public Concert(int concertID, Genre rock, Venue olympiatheatre, long time, String act, String actDescription){
+    public Concert(int concertID, Genre rock, Venue olympiatheatre,
+                   long time, String act, String actDescription){
         this(0,null,null, null,null,null);
     }
 

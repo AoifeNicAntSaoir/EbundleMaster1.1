@@ -31,13 +31,11 @@ public class Hotel {
 
     }
 
-     public void setHotelId(String hotelId)
-     {
+     public void setHotelId(String hotelId) {
           this.hotelId = hotelId;
      }
 
-    public void setNameOfHotel(String nameOfHotel)
-    {
+    public void setNameOfHotel(String nameOfHotel) {
         this.nameOfHotel = nameOfHotel;
     }
 

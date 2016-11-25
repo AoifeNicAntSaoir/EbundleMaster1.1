@@ -12,6 +12,20 @@ public class Concert {
     private String act;
     private String actDescription;
 
+    public Concert(int concertID, String genre, String venue,
+                   String date, String act, String actDescription) {
+        this.concertID = concertID;
+        this.genre = genre;
+        this.venue = venue;
+        this.date = date;
+        this.act = act;
+        this.actDescription = actDescription;
+    }
+
+    public Concert(){
+        this(0,null,null, null,null,null);
+    }
+
     public int getConcertID() {
         return concertID;
     }

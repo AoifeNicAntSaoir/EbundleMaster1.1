@@ -20,7 +20,7 @@ public class  ConcertCatalogue {
 
     public Concert getConcert(int concertID) {
         for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
-            Concert concert = (Concert) i.next();
+            Concert concert = i.next();
             if (concert.getConcertID() == (concertID)) {
                 return concert;
             }
@@ -31,16 +31,16 @@ public class  ConcertCatalogue {
 
     public Concert search(Concert searchConcert) {
         for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
-            Concert concert = (Concert) i.next();
+            Concert concert = i.next();
             // Ignore serial number since that's unique
             // Ignore price since that's unique
             Genre genre = concert.getGenre();
             if ((genre != null) && (!genre.equals("")) &&
-                    (!genre.equals(genre.getGenre())))
+                    (!genre.equals(genre)))
                 continue;
             Venue venue = searchConcert.getVenue();
             if ((venue != null) && (!venue.equals("")) &&
-                    (!venue.equals(venue.getVenue())))
+                    (!venue.equals(venue)))
                 continue;
             Concert c = new Concert();
 
@@ -55,7 +55,7 @@ public class  ConcertCatalogue {
             if ((concertDate != null) && (!concertDate.equals("")) &&
                     (!concertDate.equals(c.getDate())))
                 continue;
-            return guitar;
+            return concert;
         }
         return null;
     }

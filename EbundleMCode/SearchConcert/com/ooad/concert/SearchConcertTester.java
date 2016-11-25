@@ -1,7 +1,9 @@
 package com.ooad.concert;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.GregorianCalendar;
 
 /**
  * Created by Aoife Sayers on 21/11/2016.
@@ -30,7 +32,7 @@ public class SearchConcertTester {
 
     private static void initialiseConcerts(ConcertCatalogue catalogue) {
 
-        Calendar date = Calendar.getInstance();
+            Calendar date = Calendar.getInstance();
 
         catalogue.addConcert(12345, Genre.COUNTRY, Venue.INEC, date, "Daniel O'Donnell", "A wee thick country vegetable!");
 

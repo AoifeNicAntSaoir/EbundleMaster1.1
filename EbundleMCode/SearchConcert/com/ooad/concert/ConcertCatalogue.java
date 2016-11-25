@@ -1,10 +1,7 @@
 package com.ooad.concert;
 
 
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
-import java.util.LinkedList;
+import java.util.*;
 
 public class  ConcertCatalogue {
     private List<Concert> concerts;
@@ -14,7 +11,7 @@ public class  ConcertCatalogue {
     }
 
 
-    public void addConcert(int concertID, Genre genre, Venue venue, Date date, String act, String actDescription) {
+    public void addConcert(int concertID, Genre genre, Venue venue, Calendar date, String act, String actDescription) {
         Concert newConcert = new Concert(concertID, genre, venue, date, act, actDescription);
         concerts.add(newConcert);
         Concert concert = new Concert(concertID, genre, venue, date, act, actDescription);
@@ -23,8 +20,8 @@ public class  ConcertCatalogue {
 
     public Concert getConcert(int concertID) {
         for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
-            Concert guitar = (Concert) i.next();
-            if (guitar.getConcertID() == (concertID)) {
+            Concert concert = (Concert) i.next();
+            if (concert.getConcertID() == (concertID)) {
                 return concert;
             }
         }
@@ -34,10 +31,10 @@ public class  ConcertCatalogue {
 
     public Concert search(Concert searchConcert) {
         for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
-            Concert guitar = (Concert) i.next();
+            Concert concert = (Concert) i.next();
             // Ignore serial number since that's unique
             // Ignore price since that's unique
-            String genre = concert.getGenre();
+            Genre genre = concert.getGenre();
             if ((genre != null) && (!genre.equals("")) &&
                     (!genre.equals(genre.getGenre())))
                 continue;
@@ -54,7 +51,7 @@ public class  ConcertCatalogue {
                 continue;
             }
 
-            Date concertDate = c.getDate();
+            Calendar concertDate = c.getDate();
             if ((concertDate != null) && (!concertDate.equals("")) &&
                     (!concertDate.equals(c.getDate())))
                 continue;

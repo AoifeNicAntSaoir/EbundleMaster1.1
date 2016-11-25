@@ -1,9 +1,7 @@
 package com.ooad.concert;
 
-import java.util.Date;
-import java.util.Iterator;
-import java.util.List;
-import java.util.LinkedList;
+import java.util.Calendar;
+
 
 /**
  * Created by Aoife Sayers on 17/11/2016.
@@ -13,12 +11,12 @@ public class Concert {
     private int concertID;
     private Genre genre;
     private Venue venue;
-    private Date date;
+    private Calendar date;
     private String act;
     private String actDescription;
 
     public Concert(int concertID, Genre genre, Venue venue,
-                   Date date, String act, String actDescription) {
+                   Calendar date, String act, String actDescription) {
         this.concertID = concertID;
         this.genre = genre;
         this.venue = venue;
@@ -55,11 +53,11 @@ public class Concert {
         this.venue = venue;
     }
 
-    public Date getDate() {
+    public Calendar getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(Calendar date) {
         this.date = date;
     }
 

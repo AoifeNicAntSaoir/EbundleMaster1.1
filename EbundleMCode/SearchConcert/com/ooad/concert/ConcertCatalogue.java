@@ -22,7 +22,7 @@ public class  ConcertCatalogue {
     }
 
     public Concert getConcert(int concertID) {
-        for (Iterator i = concerts.iterator(); i.hasNext(); ) {
+        for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
             Concert guitar = (Concert) i.next();
             if (guitar.getConcertID() == (concertID)) {
                 return concert;
@@ -33,7 +33,7 @@ public class  ConcertCatalogue {
 
 
     public Concert search(Concert searchConcert) {
-        for (Iterator i = concerts.iterator(); i.hasNext(); ) {
+        for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
             Concert guitar = (Concert) i.next();
             // Ignore serial number since that's unique
             // Ignore price since that's unique

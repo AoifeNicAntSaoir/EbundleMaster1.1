@@ -25,8 +25,12 @@ public class Concert {
     }
 
 <<<<<<< HEAD
+<<<<<<< HEAD
     public Concert(int concertID, Genre rock, Venue olympiatheatre,
                    long time, String act, String actDescription){
+=======
+    public Concert(){
+>>>>>>> parent of 9fd122d... Initialise concert catalogue & type migration for date & Tester class
 =======
     public Concert(){
 >>>>>>> parent of 9fd122d... Initialise concert catalogue & type migration for date & Tester class

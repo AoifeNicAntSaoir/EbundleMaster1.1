@@ -1,11 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="45a6d8e4-1e38-45f6-8c0c-ff767e96fda5" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java" afterPath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java" />
+    <list default="true" id="99fb7137-dad1-40dd-9342-08586e1d8bae" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/EbundleMaster1.1.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/ConcertCatalogue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Genre.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Venue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchForConcert.iml" afterPath="" />
     </list>
-    <ignored path="EbundleMaster1.1.iws" />
+    <ignored path="EbundleMCode.iws" />
     <ignored path=".idea/workspace.xml" />
+    <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,54 +36,7 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="EbundleMaster1.1" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="Concert.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding>
-                <marker date="1480066128754" expanded="true" signature="1024:1073" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1105:1139" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1259:1289" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1329:1365" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1395:1425" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1465:1501" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1529:1558" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1595:1629" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1658:1686" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1723:1755" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1795:1834" ph="{...}" />
-                <marker date="1480066128754" expanded="true" signature="1893:1947" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ConcertCatalogue.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/ConcertCatalogue.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Genre.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Genre.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <favorites_list name="EbundleMCode" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -107,22 +78,19 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EbundleMaster1.1" />
+              <option name="myItemId" value="EbundleMCode" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
-  </component>
-  <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/EbundleMCode" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">
@@ -289,7 +257,7 @@
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="EbundleMaster1.1" />
+      <module name="EbundleMCode" />
       <envs />
       <method />
     </configuration>
@@ -375,11 +343,11 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="45a6d8e4-1e38-45f6-8c0c-ff767e96fda5" name="Default" comment="" />
-      <created>1480065659496</created>
+      <changelist id="99fb7137-dad1-40dd-9342-08586e1d8bae" name="Default" comment="" />
+      <created>1480108535889</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1480065659496</updated>
+      <updated>1480108535889</updated>
     </task>
     <servers />
   </component>
@@ -426,142 +394,5 @@
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480066128754" expanded="true" signature="1024:1073" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1105:1139" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1259:1289" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1329:1365" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1395:1425" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1465:1501" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1529:1558" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1595:1629" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1658:1686" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1723:1755" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1795:1834" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1893:1947" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/ConcertCatalogue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Genre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/SearchConcertTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1480066128754" expanded="true" signature="1024:1073" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1105:1139" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1259:1289" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1329:1365" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1395:1425" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1465:1501" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1529:1558" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1595:1629" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1658:1686" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1723:1755" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1795:1834" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1893:1947" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/ConcertCatalogue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Genre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/SearchConcertTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Genre.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/SearchConcertTester.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-          <folding>
-            <marker date="1480066128754" expanded="true" signature="1024:1073" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1105:1139" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1259:1289" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1329:1365" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1395:1425" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1465:1501" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1529:1558" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1595:1629" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1658:1686" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1723:1755" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1795:1834" ph="{...}" />
-            <marker date="1480066128754" expanded="true" signature="1893:1947" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/ConcertCatalogue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>

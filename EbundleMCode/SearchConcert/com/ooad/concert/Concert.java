@@ -5,12 +5,12 @@ package com.ooad.concert;
  */
 public class Concert {
 
-    public int concertID;
-    public String genre;
-    public String venue;
-    public String date;
-    public String act;
-    public String actDescription;
+    private int concertID;
+    private String genre;
+    private String venue;
+    private String date;
+    private String act;
+    private String actDescription;
 
     public int getConcertID() {
         return concertID;

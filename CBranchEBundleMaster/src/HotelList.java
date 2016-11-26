@@ -17,7 +17,7 @@ public class HotelList {
     }
 
     public void addHotel(String hotelId, String nameOfHotel, String street, String town, String county, String roomType,
-                         Date checkInDate, Date checkOutDate){
+                         String checkInDate, String checkOutDate){
 
         Hotel hotel = new Hotel(hotelId, nameOfHotel, street, town, county, roomType,
                                   checkInDate, checkOutDate);
@@ -69,12 +69,12 @@ public class HotelList {
                     (!roomType.equals((hotel.getRoomType()))))
                 continue;
 
-            Date checkInDate = searchHotel.getCheckInDate();
+            String checkInDate = searchHotel.getCheckInDate();
             if((checkInDate != null) && (!checkInDate.equals("")) &&
                     (!checkInDate.equals((hotel.getCheckInDate()))))
                 continue;
 
-            Date checkOutDate = searchHotel.getCheckOutDate();
+            String checkOutDate = searchHotel.getCheckOutDate();
             if((checkOutDate != null) && (!checkOutDate.equals("")) &&
                     (!checkOutDate.equals((hotel.getCheckOutDate()))))
                 continue;

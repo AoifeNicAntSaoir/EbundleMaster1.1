@@ -13,11 +13,11 @@ public class Hotel {
     private String town;
     private String county;
     private String roomType;
-    private Date checkInDate;
-    private Date checkOutDate;
+    private String checkInDate;
+    private String checkOutDate;
 
     public Hotel(String hotelId, String nameOfHotel, String street, String town, String county, String roomType,
-                  Date checkInDate, Date checkOutDate)  {
+                  String checkInDate, String checkOutDate)  {
 
 
         this.hotelId = hotelId;
@@ -56,11 +56,11 @@ public class Hotel {
         this.roomType = roomType;
     }
 
-    public void setCheckInDate(Date checkInDate) {
+    public void setCheckInDate(String checkInDate) {
         this.checkInDate = checkInDate;
     }
 
-    public void setCheckOutDate(Date checkOutDate) {
+    public void setCheckOutDate(String checkOutDate) {
         this.checkOutDate = checkOutDate;
     }
 
@@ -88,11 +88,11 @@ public class Hotel {
         return roomType;
     }
 
-    public Date getCheckInDate() {
+    public String getCheckInDate() {
         return checkInDate;
     }
 
-    public Date getCheckOutDate() {
+    public String getCheckOutDate() {
         return checkOutDate;
     }
 }

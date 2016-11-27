@@ -8,16 +8,20 @@ import java.util.Calendar;
 public abstract class Event {
 
     //Type - concert/ sports/ arts & theatre, comedy
-    protected Type type;
+
+
+    protected EventClass type;
     protected Genre genre;
     protected Venue venue;
     protected Calendar date;
+    protected double price;
 
-    public Type getType() {
+
+    public EventClass getType() {
         return type;
     }
 
-    public void setType(Type type) {
+    public void setType(EventClass type) {
         this.type = type;
     }
 

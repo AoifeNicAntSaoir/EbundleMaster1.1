@@ -6,27 +6,22 @@ import java.util.Calendar;
 /**
  * Created by Aoife Sayers on 17/11/2016.
  */
-public class Concert {
+public class Concert extends Event {
 
     private int concertID;
     private Genre genre;
-    private Venue venue;
-    private Calendar date;
     private String act;
     private String actDescription;
 
-    public Concert(int concertID, Genre genre, Venue venue,
-                   Calendar date, String act, String actDescription) {
+    public Concert(int eventId, EventClass type,
+                   Venue venue, Calendar date, double price,
+                    int concertID, Genre genre, String act,
+                   String actDescription) {
+        super(eventId, type, venue, date, price);
         this.concertID = concertID;
         this.genre = genre;
-        this.venue = venue;
-        this.date = date;
         this.act = act;
         this.actDescription = actDescription;
-    }
-
-    public Concert(){
-        this(0,null,null, null,null,null);
     }
 
     public int getConcertID() {

@@ -9,12 +9,25 @@ public abstract class Event {
 
     //Type - concert/ sports/ arts & theatre, comedy
 
-
+    protected int eventId;
     protected EventClass type;
-    protected Genre genre;
     protected Venue venue;
     protected Calendar date;
     protected double price;
+
+    public Event(int eventId, EventClass type,
+                 Venue venue, Calendar date, double price)
+    {
+        this.eventId = eventId;
+        this.type = type;
+        this.venue = venue;
+        this.date = date;
+        this.price = price;
+    }
+
+    public Event(){
+        this(0,EventClass.ARTSnTHEATRE, Venue.THEMARQUEE, Calendar.getInstance(), 0.00);
+    }
 
 
     public EventClass getType() {
@@ -23,14 +36,6 @@ public abstract class Event {
 
     public void setType(EventClass type) {
         this.type = type;
-    }
-
-    public Genre getGenre() {
-        return genre;
-    }
-
-    public void setGenre(Genre genre) {
-        this.genre = genre;
     }
 
     public Venue getVenue() {

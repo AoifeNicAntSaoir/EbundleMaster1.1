@@ -11,8 +11,9 @@ public class Sports extends Event {
 
     public Sports(int eventId, EventClass type,
                   Venue venue, Calendar date, double price,
+                  String act, String actDescription,
                   SportsType sportsType, String team){
-        super(eventId, type, venue, date, price);
+        super(eventId, type, venue, date, price, act, actDescription);
         this.sportsType = sportsType;
         this.team = team;
     }

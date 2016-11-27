@@ -10,9 +10,9 @@ public class ArtsTheatre extends Event {
 
     public ArtsTheatre(int eventId, EventClass type,
                        Venue venue, Calendar date, double price,
-                       ArtType artType)
+                       ArtType artType, String act, String actDescription)
     {
-        super(eventId, type, venue, date, price);
+        super(eventId, type, venue, date, price, act, actDescription);
         this.artType = artType;
     }
 

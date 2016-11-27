@@ -11,8 +11,8 @@ public class Comedy extends Event {
 
     public Comedy(int eventId, EventClass type,
                   Venue venue, Calendar date, double price,
-                  String comedian){
-        super(eventId, type, venue, date, price);
+                  String act, String actDescription, String comedian){
+        super(eventId, type, venue, date, price, act, actDescription);
         this.comedian = comedian;
     }
 

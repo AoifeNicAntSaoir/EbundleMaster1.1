@@ -14,19 +14,24 @@ public abstract class Event {
     protected Venue venue;
     protected Calendar date;
     protected double price;
+    protected String act;
+    protected String actDescription;
 
     public Event(int eventId, EventClass type,
-                 Venue venue, Calendar date, double price)
+                 Venue venue, Calendar date, double price,
+                String act, String actDescription)
     {
         this.eventId = eventId;
         this.type = type;
         this.venue = venue;
         this.date = date;
         this.price = price;
+        this.act = act;
+        this.actDescription = actDescription;
     }
 
     public Event(){
-        this(0,EventClass.ARTSnTHEATRE, Venue.THEMARQUEE, Calendar.getInstance(), 0.00);
+        this(0,EventClass.ARTSnTHEATRE, Venue.THEMARQUEE, Calendar.getInstance(), 0.00, null, null);
     }
 
 
@@ -53,6 +58,24 @@ public abstract class Event {
     public void setDate(Calendar date) {
         this.date = date;
     }
+
+    public String getAct() {
+        return act;
+    }
+
+    public void setAct(String act) {
+        this.act = act;
+    }
+
+    public String getActDescription() {
+        return actDescription;
+    }
+
+    public void setActDescription(String actDescription) {
+        this.actDescription = actDescription;
+    }
+
+
 
 
 

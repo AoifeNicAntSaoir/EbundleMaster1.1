@@ -6,22 +6,22 @@ import java.util.Calendar;
  * Created by Aoife Sayers on 27/11/2016.
  */
 public class Sports extends Event {
-    String sportsType; //Enum
+    SportsType sportsType;
     String team;
 
     public Sports(int eventId, EventClass type,
                   Venue venue, Calendar date, double price,
-                  String sportsType, String team){
+                  SportsType sportsType, String team){
         super(eventId, type, venue, date, price);
         this.sportsType = sportsType;
         this.team = team;
     }
 
-    public String getSportsType() {
+    public SportsType getSportsType() {
         return sportsType;
     }
 
-    public void setSportsType(String sportsType) {
+    public void setSportsType(SportsType sportsType) {
         this.sportsType = sportsType;
     }
 

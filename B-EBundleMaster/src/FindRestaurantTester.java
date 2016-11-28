@@ -7,7 +7,7 @@ public class FindRestaurantTester
         initializeRestaurantist(restaurantList);
     }
 
-    Restaurant customerRequest = new Restaurant("","Lana","Chinese","Tralee");
+    //Restaurant customerRequest = new Restaurant("","Lana","Chinese","Tralee");
 
     //Restaurant restaurant = restaurantList.search(customerRequest);
 

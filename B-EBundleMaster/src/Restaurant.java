@@ -3,14 +3,14 @@ import java.util.Date;
 public class Restaurant
 {
 
-    private String restID;
+    private int restID;
     private String restName;
-    private String restType;
-    private String restLocation;
+    private RestaurantType restType;
+    private RestaurantLocation restLocation;
 
 
-    public Restaurant(String restID,String restName,String restType,
-                      String restLocation)
+    public Restaurant(int restID,String restName,RestaurantType restType,
+                      RestaurantLocation restLocation)
     {
         setRestID(restID);
         setRestName(restName);
@@ -19,35 +19,43 @@ public class Restaurant
 
     }
 
-    public String getRestName() {
+    public String getRestName()
+    {
         return restName;
     }
 
-    public void setRestName(String restName) {
+    public void setRestName(String restName)
+    {
         restName = restName;
     }
 
-    public String getRestType() {
+    public RestaurantType getRestType()
+    {
         return restType;
     }
 
-    public void setRestType(String restType) {
+    public void setRestType(RestaurantType restType)
+    {
         restType = restType;
     }
 
-    public String getRestLocation() {
+    public RestaurantLocation getRestLocation()
+    {
         return restLocation;
     }
 
-    public void setRestLocation(String restLocation) {
+    public void setRestLocation(RestaurantLocation restLocation)
+    {
         restLocation = restLocation;
     }
 
-    public String getRestID() {
+    public int getRestID()
+    {
         return restID;
     }
 
-    public void setRestID(String restID) {
+    public void setRestID(int restID)
+    {
         restID = restID;
     }
 }

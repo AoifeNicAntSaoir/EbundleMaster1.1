@@ -1,9 +1,7 @@
 package com.ooad.concert;
 
 import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.GregorianCalendar;
+import java.util.*;
 
 /**
  * Created by Aoife Sayers on 21/11/2016.
@@ -11,14 +9,18 @@ import java.util.GregorianCalendar;
 public class SearchConcertTester {
     public static void main(String[] args) {
 
-        ConcertCatalogue catalogue = new ConcertCatalogue();
-        initialiseConcerts(catalogue);
+        ConcertCatalogue catalogue = new ConcertCatalogue(new LinkedList<>());
+        initialiseEvents(catalogue);
 
-        Calendar date = Calendar.getInstance();
-        Concert whatErinLikes = new Concert(1234, Genre.ROCK, Venue.OLYMPIATHEATRE, date, "Lower Than Atlantis", "3 piece alternative rock band");
 
-        Concert concert = catalogue.search(whatErinLikes);
+        findMatching(inventory, new Concert(1,EventClass.CONCERT));
+
+         private static void findMatching(final ConcertCatalogue catalogue, final Concert whatUserWants)
+        {
+            List<Event> matchingEvent = catalogue.search(whatUserWants);
+
         if (concert != null) {
+            Event event = concert.getSpec();
             System.out.println("Erin you might like this " +
                     concert.getConcertID() + " " + concert.getAct() +
                     " \n" + concert.getActDescription() +
@@ -30,7 +32,7 @@ public class SearchConcertTester {
     }
 
 
-    private static void initialiseConcerts(ConcertCatalogue catalogue) {
+    private static void initialiseEvents(ConcertCatalogue catalogue) {
 
             Calendar date = Calendar.getInstance();
 

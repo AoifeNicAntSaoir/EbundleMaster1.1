@@ -43,37 +43,37 @@ public class HotelList {
             //ignores HotelId because it is unique.
             NameOfHotel nameOfHotel = searchHotel.getNameOfHotel();
                 if((nameOfHotel != null) && (!nameOfHotel.equals("")) &&
-                        (!nameOfHotel.equals((hotel.getNameOfHotel()))))
+                        (!nameOfHotel.equals(hotel.getNameOfHotel())))
                     continue;
 
             String street = searchHotel.getStreet();
             if((street != null) && (!street.equals("")) &&
-                    (!street.equals((hotel.getStreet()))))
+                    (!street.equals(hotel.getStreet())))
                     continue;
 
             String town = searchHotel.getTown();
             if((town != null) && (!town.equals("")) &&
-                    (!town.equals((hotel.getTown()))))
+                    (!town.equals(hotel.getTown())))
                 continue;
 
             String county = searchHotel.getCounty();
             if((county != null) && (!county.equals("")) &&
-                    (!county.equals((hotel.getCounty()))))
+                    (!county.equals(hotel.getCounty())))
                 continue;
 
             RoomType roomType = searchHotel.getRoomType();
             if((roomType != null) && (!roomType.equals("")) &&
-                    (!roomType.equals((hotel.getRoomType()))))
+                    (!roomType.equals(hotel.getRoomType())))
                 continue;
 
             Calendar checkInDate = searchHotel.getCheckInDate();
             if((checkInDate != null) && (!checkInDate.equals("")) &&
-                    (!checkInDate.equals((hotel.getCheckInDate()))))
+                    (!checkInDate.equals(hotel.getCheckInDate())))
                 continue;
 
             Calendar checkOutDate = searchHotel.getCheckOutDate();
             if((checkOutDate != null) && (!checkOutDate.equals("")) &&
-                    (!checkOutDate.equals((hotel.getCheckOutDate()))))
+                    (!checkOutDate.equals(hotel.getCheckOutDate())))
                 continue;
 
             return hotel;

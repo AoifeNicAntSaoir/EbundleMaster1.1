@@ -19,10 +19,15 @@ public class FindHotelTester {
 
         Hotel hotel = hotelList.search(ErinsHotelChoice);
         if(hotel != null){
-            System.out.println(" Found a Hotel that you might be interested " + "\nHotel ID: " + hotel.getHotelId() + "\nHotel Name: " +
-             hotel.getNameOfHotel() + "\nStreet: " + hotel.getStreet() + " \nCounty:" + hotel.getCounty()
-              + " " + hotel.getCounty() + "\nRoom Type: " + hotel.getRoomType()
-               + " \nCheck In Date: " + hotel.getCheckInDate() + "\nCheck Out Date: " + hotel.getCheckOutDate());
+            System.out.println(" Found a Hotel that you might be interested " + "\nHotel ID: " +
+                    hotel.getHotelId() + "\nHotel Name: " +
+                    hotel.getNameOfHotel() + "\nStreet: " +
+                    hotel.getStreet() + " \nTown:" +
+                    hotel.getTown() + "\nCounty: " +
+                    hotel.getCounty()+ " " + "\nRoom Type: " +
+                    hotel.getRoomType() + " \nCheck In Date: " +
+                    hotel.getCheckInDate() + "\nCheck Out Date: " +
+                    hotel.getCheckOutDate());
         }
         else{
             System.out.println("Sorry no hotel Found");

@@ -1,28 +1,31 @@
 
-public class FindRestaurantTester
-{
-    public static void main(String args[])
-    {
+public class FindRestaurantTester {
+    public static void main(String args[]) {
         RestaurantList restaurantList = new RestaurantList();
-        initializeRestaurantist(restaurantList);
+        initialiseRestaurant(restaurantList);
+
+        Restaurant customerRequest = new Restaurant(1,RestaurantName.LANA,
+                RestaurantType.CHINESE,RestaurantLocation.KERRY);
+
+        Restaurant restaurant = restaurantList.search(customerRequest);
+
+        if(restaurant != null) {
+            System.out.println("Restaurant found: " +
+                    restaurant.getRestName() + " " + restaurant.getRestType() + " " +
+                    restaurant.getRestLocation());}
+        else {
+            System.out.println("Restaurant not avaliable");}
     }
 
-    //Restaurant customerRequest = new Restaurant("","Lana","Chinese","Tralee");
-
-    //Restaurant restaurant = restaurantList.search(customerRequest);
-
-    /*if(restaurant != null)
-    {
-        System.out.println("Restaurant avaliable"
-        restaurant.getRestName() + " " + restaurant.getRestType() + " " +
-        restaurant.getRestLocation());
-    }
-    else
-        System.out.println("Restaurant not avaliable");*/
-
-
-    private static void initializeRestaurantist(RestaurantList restaurantList)
-    {
+    private static void initialiseRestaurant(RestaurantList restaurantList) {
+        restaurantList.addRestaurant(1,RestaurantName.LANA,
+                RestaurantType.CHINESE,RestaurantLocation.KERRY);
+        restaurantList.addRestaurant(2,RestaurantName.MILANO,
+                RestaurantType.ITALIAN,RestaurantLocation.LIMERICK);
+        restaurantList.addRestaurant(3,RestaurantName.LA_PENICHE,
+                RestaurantType.FRENCH,RestaurantLocation.DUBLIN);
+        restaurantList.addRestaurant(4,RestaurantName.THAI_PALACE,
+                RestaurantType.THAI,RestaurantLocation.CLARE);
 
     }
 }

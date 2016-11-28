@@ -4,9 +4,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 
-public class RestaurantList
-{
-    private List restaurants;
+public class RestaurantList {
+    private List<Restaurant> restaurants;
 
     public RestaurantList()
     {
@@ -50,6 +49,7 @@ public class RestaurantList
             if((restLocation != null) && (!restLocation.equals((""))) &&
                     (!restLocation.equals(restaurant.getRestLocation())))
                 continue;
+            return restaurant;
         }
         return null;
     }

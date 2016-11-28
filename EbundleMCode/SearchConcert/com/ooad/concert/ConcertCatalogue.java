@@ -1,62 +1,66 @@
 package com.ooad.concert;
+import java.util.ArrayList;
+import java.util.List;
+
+public class ConcertCatalogue {
+    protected final List<Event> eventCatalogue;
+
+    protected final List<Concert> concertCatalogue;
+    protected final List<ArtsTheatre> artsTheatreCatalogue;
+    protected final List<Comedy> comedyCatalogue;
+    protected final List<Sports> sportsCatalogue;
 
 
-import java.util.*;
+    public ConcertCatalogue(List<Event> eventCatalogue) {
+        this.eventCatalogue = eventCatalogue;
 
-public class  ConcertCatalogue {
-    private List<Concert> concerts;
+        concertCatalogue = new ArrayList<Concert>(); //Type Inference
+        artsTheatreCatalogue = new ArrayList<ArtsTheatre>();
+        comedyCatalogue = new ArrayList<Comedy>();
+        sportsCatalogue = new ArrayList<Sports>();
 
-    public ConcertCatalogue() {
-        concerts = new LinkedList();
     }
 
+    public void addEvent(EventSpec eventSpec, int eventId, double price, ArtType artType, String comedian,
+                         int concertId, Genre genre, SportsType sportsType, String team) {
+        Event event;
+        if(eventSpec.getEventClass() == EventClass.ARTSnTHEATRE){
+            event = new ArtsTheatre(eventSpec, eventId, price, artType);
+            eventCatalogue.add(event);
+            //artsTheatreCatalogue.add(e);
 
-    public void addConcert(int concertID, Genre genre, Venue venue, Calendar date, String act, String actDescription) {
-        Concert newConcert = new Concert(concertID, genre, venue, date, act, actDescription);
-        concerts.add(newConcert);
-        Concert concert = new Concert(concertID, genre, venue, date, act, actDescription);
-                   concerts.add(concert);
+        }
+        else if(eventSpec.getEventClass() == EventClass.COMEDY){
+            event = new Comedy(eventSpec, eventId, price, comedian);
+        }
+        else if(eventSpec.getEventClass() == EventClass.CONCERT){
+            event = new Concert(eventSpec, eventId, price, concertId, genre);
+
+        }
+        else if(eventSpec.getEventClass() == EventClass.SPORTS){
+            event = new Sports(eventSpec, eventId, price, sportsType, team);
+
+        }
+
     }
 
-    public Concert getConcert(int concertID) {
-        for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
-            Concert concert = i.next();
-            if (concert.getConcertID() == (concertID)) {
-                return concert;
+    public Event getEvent(int eventId) {
+        for (Event event : eventCatalogue) {
+            if (event.getEventId() == eventId){
+                return event;
             }
         }
         return null;
     }
 
-
-    public Concert search(Concert searchConcert) {
-        for (Iterator<Concert> i = concerts.iterator(); i.hasNext(); ) {
-            Concert concert = i.next();
-            // Ignore serial number since that's unique
-            // Ignore price since that's unique
-            Genre genre = concert.getGenre();
-            if ((genre != null) && (!genre.equals("")) &&
-                    (!genre.equals(genre)))
-                continue;
-            Venue venue = searchConcert.getVenue();
-            if ((venue != null) && (!venue.equals("")) &&
-                    (!venue.equals(venue)))
-                continue;
-            Concert c = new Concert();
-
-
-            String act = c.getAct();
-            if ((act != null) && (!act.equals("")) &&
-                    (!act.equals(c.getAct()))) {
-                continue;
+    public List<Event> search(EventSpec spec) {
+        List<Event> matchingEvent = new ArrayList<>();
+        for (Event event : eventCatalogue) {
+            EventSpec eventSpec = event.getEventSpec();
+            if (eventSpec.matches(spec)) {
+                eventCatalogue.add(event);
             }
-
-            Calendar concertDate = c.getDate();
-            if ((concertDate != null) && (!concertDate.equals("")) &&
-                    (!concertDate.equals(c.getDate())))
-                continue;
-            return concert;
         }
-        return null;
+        return matchingEvent;
     }
 }

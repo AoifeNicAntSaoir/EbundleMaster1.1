@@ -1,56 +1,66 @@
 package com.ooad.concert;
 
-import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Calendar;
+import java.util.LinkedList;
+import java.util.List;
 
-/**
- * Created by Aoife Sayers on 21/11/2016.
- */
-public class SearchConcertTester {
+
     public static void main(String[] args) {
-
+        // Set up Rick's guitar inventory
         ConcertCatalogue catalogue = new ConcertCatalogue(new LinkedList<>());
         initialiseEvents(catalogue);
 
+        findMatching(catalogue, new Concert
+                Venue.THEMARQUEE, Calendar.getInstance(),  ), "Stratocaster",
+                Type.ELECTRIC, Wood.ALDER, Wood.ALDER, 6));
 
-        findMatching(inventory, new Concert(1,EventClass.CONCERT));
+        System.out.println("\nLooking for a mandolin...");
 
-         private static void findMatching(final ConcertCatalogue catalogue, final Concert whatUserWants)
-        {
-            List<Event> matchingEvent = catalogue.search(whatUserWants);
 
-        if (concert != null) {
-            Event event = concert.getSpec();
-            System.out.println("Erin you might like this " +
-                    concert.getConcertID() + " " + concert.getAct() +
-                    " \n" + concert.getActDescription() +
-                    " on the " + concert.getDate() + " in the" +
-                    concert.getVenue());
+        findMatching(inventory, new MandolinSpec(Builder.FENDER, "Stratocaster",
+                Type.ELECTRIC, Wood.ALDER, Wood.ALDER, Style.F));
+
+    }
+
+    private static void findMatching(final Inventory inventory, final InstrumentSpec whatErinLikes) {
+        List<Instrument> matchingInstruments = inventory.search(whatErinLikes);
+        if (!matchingInstruments.isEmpty()) {
+            for (Instrument match : matchingInstruments) {
+                if (match != null) {
+                    InstrumentSpec instrumentSpec = match.getSpec();
+                    System.out.println("Erin, you might like this " +
+                            instrumentSpec.getBuilder() + " " + instrumentSpec.getModel() + " " +
+                            instrumentSpec.getType() + " instrument:\n   " +
+                            instrumentSpec.getBackWood() + " back and sides,\n   " +
+                            instrumentSpec.getTopWood() + " top.\nYou can have it for only $" +
+                            match.getPrice() + "!");
+                }
+            }
         } else {
-            System.out.println("Sorry Erin, we have nothing for you");
+            System.out.println("Sorry, Erin, we have nothing for you.");
         }
     }
+
 
 
     private static void initialiseEvents(ConcertCatalogue catalogue) {
 
             Calendar date = Calendar.getInstance();
 
-        catalogue.addConcert(12345, Genre.COUNTRY, Venue.INEC, date, "Daniel O'Donnell", "A wee thick country vegetable!");
 
-        catalogue.addConcert(2468, Genre.ALTERNATIVE, Venue.OLYMPIATHEATRE, date, "Lower Than Atlantis", "An English band");
+        //Concerts
+        catalogue.addEvent(new EventSpec("Ariana Grande", "Github all day... Github all night",
+                            EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance()),1234, 45.50);
 
-        catalogue.addConcert(39393, Genre.REGGAE, Venue.MARLAYPARK, date, "Bob Marley", "Jammin");
+        catalogue.addEvent(new EventSpec("The Weeknd", "I can't feel my face",
+                EventClass.CONCERT, Venue.CROKEPARK, Calendar.getInstance()),2345, 50.50);
 
-        catalogue.addConcert(20292, Genre.INDIE, Venue.OLYMPIATHEATRE, date, "Catfish and the Bottlemen", "Up and coming band 2016");
+        catalogue.addEvent(new EventSpec("", "Github all day... Github all night",
+                EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance()),1234, 45.50);
 
-        catalogue.addConcert(94823, Genre.POP, Venue.THREEARENA, date, "Bastille", "Alternative pop band");
+        catalogue.addEvent(new EventSpec("Ariana Grande", "Github all day... Github all night",
+                EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance()),1234, 45.50);
 
-        catalogue.addConcert(22920, Genre.DANCE, Venue.MARLAYPARK, date, "Disclosure", "Dance act..");
-
-        catalogue.addConcert(394399, Genre.RNB, Venue.AVIVASTADIUM, date, "The Weeknd", "Starboy..");
-
-        catalogue.addConcert(23422, Genre.POP, Venue.THEMARQUEE, date, "Ariana Grande", "Github all day... Github all night");
 
     }
 

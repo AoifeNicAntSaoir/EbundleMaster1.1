@@ -6,8 +6,8 @@ import java.util.Calendar;
  * Created by Aoife Sayers on 27/11/2016.
  */
 public class Sports extends Event {
-    SportsType sportsType;
-    String team;
+    protected SportsType sportsType;
+    protected String team;
 
     public Sports(EventSpec eventSpec, int eventId, double price,
                    SportsType sportsType, String team){

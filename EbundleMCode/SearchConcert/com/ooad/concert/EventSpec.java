@@ -14,6 +14,17 @@ public abstract class EventSpec {
     protected Venue venue;
     protected Calendar date;
 
+    public EventSpec(String act, String actDescription,
+                     EventClass eventType, Venue venue, Calendar date)
+    {
+        this.act = act;
+        this.actDescription = actDescription;
+        this.type = eventType;
+        this.venue = venue;
+        this.date = date;
+    }
+
+
     public String getAct() {
         return act;
     }

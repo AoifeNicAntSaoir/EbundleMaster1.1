@@ -7,10 +7,12 @@ import java.util.Calendar;
  */
 public class Comedy extends Event {
 
-    private String comedian;
+    protected String comedian;
 
-    public Comedy(EventSpec eventSpec, int eventId, double price,
-                   String comedian){
+    public Comedy(final EventSpec eventSpec,
+                  final int eventId,
+                  final double price,
+                  final String comedian){
         super(eventSpec, eventId, price);
         this.comedian = comedian;
     }

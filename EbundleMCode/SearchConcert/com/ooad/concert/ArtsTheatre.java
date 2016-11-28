@@ -1,20 +1,17 @@
 package com.ooad.concert;
 
-import java.util.Calendar;
-
 /**
  * Created by Aoife Sayers on 27/11/2016.
  */
-public class ArtsTheatre extends EventSpec {
+public class ArtsTheatre extends Event {
     private ArtType artType;
 
-    public ArtsTheatre(int eventId, EventClass type,
-                       Venue venue, Calendar date, double price,
-                       ArtType artType, String act, String actDescription)
-    {
-        super(eventId, type, venue, date, price, act, actDescription);
+    public ArtsTheatre(EventSpec eventSpec, int eventId, double price,
+                  ArtType artType){
+        super(eventSpec, eventId, price);
         this.artType = artType;
     }
+
 
     public ArtType getArtType() {
         return artType;

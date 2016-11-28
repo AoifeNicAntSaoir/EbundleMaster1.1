@@ -8,7 +8,7 @@ import java.util.Calendar;
 public class Hotel {
 
     private int hotelId;
-    private String nameOfHotel;
+    private NameOfHotel nameOfHotel;
     private String street;
     private String town;
     private String county;
@@ -16,7 +16,7 @@ public class Hotel {
     private Calendar checkInDate;
     private Calendar checkOutDate;
 
-    public Hotel(int hotelId, String nameOfHotel, String street, String town, String county, String roomType,
+    public Hotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, String roomType,
                   Calendar checkInDate, Calendar checkOutDate)  {
 
 
@@ -35,7 +35,7 @@ public class Hotel {
           this.hotelId = hotelId;
      }
 
-    public void setNameOfHotel(String nameOfHotel) {
+    public void setNameOfHotel(NameOfHotel nameOfHotel) {
         this.nameOfHotel = nameOfHotel;
     }
 
@@ -68,7 +68,7 @@ public class Hotel {
         return hotelId;
     }
 
-    public String getNameOfHotel() {
+    public NameOfHotel getNameOfHotel() {
         return nameOfHotel;
     }
 

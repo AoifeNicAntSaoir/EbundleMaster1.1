@@ -13,7 +13,7 @@ public class HotelList {
         hotels = new LinkedList();
     }
 
-    public void addHotel(int hotelId, String nameOfHotel, String street, String town, String county, String roomType,
+    public void addHotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, String roomType,
                          Calendar checkInDate, Calendar checkOutDate){
 
         Hotel hotel = new Hotel(hotelId, nameOfHotel, street, town, county, roomType,
@@ -41,7 +41,7 @@ public class HotelList {
         for(Iterator i = hotels.iterator(); i.hasNext(); ){
             Hotel hotel = (Hotel) i.next();
             //ignores HotelId because it is unique.
-            String nameOfHotel = searchHotel.getNameOfHotel();
+            NameOfHotel nameOfHotel = searchHotel.getNameOfHotel();
                 if((nameOfHotel != null) && (!nameOfHotel.equals("")) &&
                         (!nameOfHotel.equals((hotel.getNameOfHotel()))))
                     continue;

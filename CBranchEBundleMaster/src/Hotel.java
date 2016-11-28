@@ -13,11 +13,11 @@ public class Hotel {
     private String town;
     private String county;
     private RoomType roomType;
-    private Calendar checkInDate;
-    private Calendar checkOutDate;
+    //private Calendar checkInDate;
+    //private Calendar checkOutDate;
 
-    public Hotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, RoomType roomType,
-                  Calendar checkInDate, Calendar checkOutDate)  {
+    public Hotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, RoomType roomType/*,
+                  Calendar checkInDate, Calendar checkOutDate*/)  {
 
 
         this.hotelId = hotelId;
@@ -26,12 +26,12 @@ public class Hotel {
         this.town = town;
         this.county = county;
         this.roomType = roomType;
-        this.checkInDate = checkInDate;
-        this.checkOutDate = checkOutDate;
+        //this.checkInDate = checkInDate;
+        //this.checkOutDate = checkOutDate;
 
     }
 
-     public void setHotelId(int hotelId) {
+    public void setHotelId(int hotelId) {
           this.hotelId = hotelId;
      }
 
@@ -56,13 +56,13 @@ public class Hotel {
         this.roomType = roomType;
     }
 
-    public void setCheckInDate(Calendar checkInDate) {
+   /* public void setCheckInDate(Calendar checkInDate) {
         this.checkInDate = checkInDate;
     }
 
     public void setCheckOutDate(Calendar checkOutDate) {
         this.checkOutDate = checkOutDate;
-    }
+    }*/
 
     public int getHotelId() {
         return hotelId;
@@ -88,11 +88,11 @@ public class Hotel {
         return roomType;
     }
 
-    public Calendar getCheckInDate() {
+    /*public Calendar getCheckInDate() {
         return checkInDate;
-    }
+    }*/
 
-    public Calendar getCheckOutDate() {
+    /*public Calendar getCheckOutDate() {
         return checkOutDate;
-    }
+    }*/
 }

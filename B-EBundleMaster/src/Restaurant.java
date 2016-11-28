@@ -1,30 +1,26 @@
 import java.util.Date;
 
-public class Restaurant
-{
+public class Restaurant {
 
     private int restID;
-    private String restName;
+    private RestaurantName restName;
     private RestaurantType restType;
     private RestaurantLocation restLocation;
 
 
-    public Restaurant(int restID,String restName,RestaurantType restType,
-                      RestaurantLocation restLocation)
-    {
+    public Restaurant(int restID,RestaurantName restName,RestaurantType restType,
+                      RestaurantLocation restLocation) {
         setRestID(restID);
         setRestName(restName);
         setRestType(restType);
-        setRestLocation(restLocation);
+        setRestLocation(restLocation);}
 
-    }
-
-    public String getRestName()
+    public RestaurantName getRestName()
     {
         return restName;
     }
 
-    public void setRestName(String restName)
+    public void setRestName(RestaurantName restName)
     {
         restName = restName;
     }
@@ -54,8 +50,5 @@ public class Restaurant
         return restID;
     }
 
-    public void setRestID(int restID)
-    {
-        restID = restID;
-    }
+    public void setRestID(int restID) {restID = restID;}
 }

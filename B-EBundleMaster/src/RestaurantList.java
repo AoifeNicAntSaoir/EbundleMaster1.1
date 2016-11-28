@@ -13,16 +13,14 @@ public class RestaurantList
         restaurants = new LinkedList();
     }
 
-    public void addRestaurant(int restID,String restName,RestaurantType restType,
-                              RestaurantLocation restLocation)
-    {
+    public void addRestaurant(int restID,RestaurantName restName,RestaurantType restType,
+                              RestaurantLocation restLocation) {
         Restaurant restaurant = new Restaurant(restID,restName,restType,restLocation);
 
         restaurants.add(restaurant);
     }
 
-    public Restaurant getRestaurant(int restID)
-    {
+    public Restaurant getRestaurant(int restID) {
         for(Iterator i = restaurants.iterator();i.hasNext();)
         {
             Restaurant restaurant = (Restaurant)i.next();
@@ -34,13 +32,11 @@ public class RestaurantList
         return null;
     }
 
-    public Restaurant search(Restaurant searchRestaurant)
-    {
-        for(Iterator i = restaurants.iterator();i.hasNext();)
-        {
+    public Restaurant search(Restaurant searchRestaurant) {
+        for(Iterator i = restaurants.iterator();i.hasNext();) {
             Restaurant restaurant = (Restaurant)i.next();
 
-            String restName = searchRestaurant.getRestName();
+            RestaurantName restName = searchRestaurant.getRestName();
             if((restName!= null) && (!restName.equals((""))) &&
                     (!restName.equals(restaurant.getRestName())))
                 continue;
@@ -57,6 +53,4 @@ public class RestaurantList
         }
         return null;
     }
-
-
 }

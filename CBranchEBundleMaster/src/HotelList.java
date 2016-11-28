@@ -1,7 +1,4 @@
-import java.util.Date;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import java.util.*;
 
 /**
  * Created by dylantiklunchan on 21/11/2016.
@@ -16,8 +13,8 @@ public class HotelList {
         hotels = new LinkedList();
     }
 
-    public void addHotel(String hotelId, String nameOfHotel, String street, String town, String county, String roomType,
-                         String checkInDate, String checkOutDate){
+    public void addHotel(int hotelId, String nameOfHotel, String street, String town, String county, String roomType,
+                         Calendar checkInDate, Calendar checkOutDate){
 
         Hotel hotel = new Hotel(hotelId, nameOfHotel, street, town, county, roomType,
                                   checkInDate, checkOutDate);
@@ -25,12 +22,12 @@ public class HotelList {
         hotels.add(hotel);
     }
 
-    public Hotel getHotel(String hotelId){
+    public Hotel getHotel(int hotelId){
 
         for (Iterator i = hotels.iterator(); i.hasNext();){
 
             Hotel hotel = (Hotel)i.next();
-                if(hotel.getHotelId().equals(hotelId)) {
+                if(hotel.getHotelId() == (hotelId)) {
 
                     return hotel;
 
@@ -69,12 +66,12 @@ public class HotelList {
                     (!roomType.equals((hotel.getRoomType()))))
                 continue;
 
-            String checkInDate = searchHotel.getCheckInDate();
+            Calendar checkInDate = searchHotel.getCheckInDate();
             if((checkInDate != null) && (!checkInDate.equals("")) &&
                     (!checkInDate.equals((hotel.getCheckInDate()))))
                 continue;
 
-            String checkOutDate = searchHotel.getCheckOutDate();
+            Calendar checkOutDate = searchHotel.getCheckOutDate();
             if((checkOutDate != null) && (!checkOutDate.equals("")) &&
                     (!checkOutDate.equals((hotel.getCheckOutDate()))))
                 continue;

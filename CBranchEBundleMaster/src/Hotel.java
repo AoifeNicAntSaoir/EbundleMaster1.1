@@ -2,22 +2,22 @@
  * Created by dylantiklunchan on 21/11/2016.
  */
 
-import java.util.Date;
+import java.util.Calendar;
 
 //superClass
 public class Hotel {
 
-    private String hotelId;
+    private int hotelId;
     private String nameOfHotel;
     private String street;
     private String town;
     private String county;
     private String roomType;
-    private String checkInDate;
-    private String checkOutDate;
+    private Calendar checkInDate;
+    private Calendar checkOutDate;
 
-    public Hotel(String hotelId, String nameOfHotel, String street, String town, String county, String roomType,
-                  String checkInDate, String checkOutDate)  {
+    public Hotel(int hotelId, String nameOfHotel, String street, String town, String county, String roomType,
+                  Calendar checkInDate, Calendar checkOutDate)  {
 
 
         this.hotelId = hotelId;
@@ -31,7 +31,7 @@ public class Hotel {
 
     }
 
-     public void setHotelId(String hotelId) {
+     public void setHotelId(int hotelId) {
           this.hotelId = hotelId;
      }
 
@@ -56,15 +56,15 @@ public class Hotel {
         this.roomType = roomType;
     }
 
-    public void setCheckInDate(String checkInDate) {
+    public void setCheckInDate(Calendar checkInDate) {
         this.checkInDate = checkInDate;
     }
 
-    public void setCheckOutDate(String checkOutDate) {
+    public void setCheckOutDate(Calendar checkOutDate) {
         this.checkOutDate = checkOutDate;
     }
 
-    public String getHotelId() {
+    public int getHotelId() {
         return hotelId;
     }
 
@@ -88,11 +88,11 @@ public class Hotel {
         return roomType;
     }
 
-    public String getCheckInDate() {
+    public Calendar getCheckInDate() {
         return checkInDate;
     }
 
-    public String getCheckOutDate() {
+    public Calendar getCheckOutDate() {
         return checkOutDate;
     }
 }

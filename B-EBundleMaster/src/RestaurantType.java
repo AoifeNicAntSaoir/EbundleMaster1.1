@@ -1,0 +1,5 @@
+
+public enum RestaurantType
+{
+    CHINESE,ITALIAN,INDIAN,THAI,JAPANESE,FRENCH,KOREAN,OTHER
+}

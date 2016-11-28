@@ -1,5 +1,6 @@
 package com.ooad.concert;
 
+import java.text.DecimalFormat;
 import java.util.Calendar;
 
 /**
@@ -8,8 +9,6 @@ import java.util.Calendar;
 public abstract class Event {
 
     //Type - concert/ sports/ arts & theatre, comedy
-
-    public EventSpec getEventSpec() {}
 
     protected EventSpec eventSpec;
     protected int eventId;
@@ -39,7 +38,8 @@ public abstract class Event {
     }
 
     public double getPrice() {
-        return price;
+        DecimalFormat df2 = new DecimalFormat(".##");
+        return Double.parseDouble(df2.format(price));
     }
 
     public void setPrice(double price) {

@@ -5,7 +5,7 @@ import java.util.Calendar;
 /**
  * Created by Aoife Sayers on 27/11/2016.
  */
-public class ArtsTheatre extends Event {
+public class ArtsTheatre extends EventSpec {
     private ArtType artType;
 
     public ArtsTheatre(int eventId, EventClass type,

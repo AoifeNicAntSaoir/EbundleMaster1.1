@@ -5,7 +5,7 @@ import java.util.Calendar;
 /**
  * Created by Aoife Sayers on 27/11/2016.
  */
-public class Sports extends Event {
+public class Sports extends EventSpec {
     SportsType sportsType;
     String team;
 
@@ -34,5 +34,10 @@ public class Sports extends Event {
         team = team;
     }
 
+    //Overrides from the super class
+    @Override
+    public boolean matches(EventSpec otherSpec){
+        if(!super.matcher.ma)
+    }
 
 }

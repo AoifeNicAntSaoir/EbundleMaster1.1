@@ -10,10 +10,11 @@ public class Restaurant {
 
     public Restaurant(int restID,RestaurantName restName,RestaurantType restType,
                       RestaurantLocation restLocation) {
-        setRestID(restID);
-        setRestName(restName);
-        setRestType(restType);
-        setRestLocation(restLocation);}
+        this.restID = restID;
+        this.restName = restName;
+        this.restType = restType;
+        this.restLocation = restLocation;
+    }
 
     public RestaurantName getRestName()
     {

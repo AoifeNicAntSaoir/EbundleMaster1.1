@@ -10,11 +10,14 @@ public class FindRestaurantTester {
         Restaurant restaurant = restaurantList.search(customerRequest);
 
         if(restaurant != null) {
-            System.out.println("Restaurant found: " +
-                    restaurant.getRestName() + " " + restaurant.getRestType() + " " +
-                    restaurant.getRestLocation());}
+            System.out.println("Restaurant found: " + "\nRestaurant Name: " +
+                    restaurant.getRestName() + "\nRestaurant Type: " +
+                    restaurant.getRestType() + "\nRestaurant Location: " +
+                    restaurant.getRestLocation());
+        }
         else {
-            System.out.println("Restaurant not avaliable");}
+            System.out.println("Restaurant not avaliable");
+        }
     }
 
     private static void initialiseRestaurant(RestaurantList restaurantList) {

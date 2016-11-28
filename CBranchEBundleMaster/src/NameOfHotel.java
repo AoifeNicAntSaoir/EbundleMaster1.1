@@ -3,20 +3,20 @@
  */
 public enum NameOfHotel {
 
-     WEST_HOTEL,EAST_HOTEL,NORTH_WEST_HOTEL,TEMPLE_HOTEL;
+    WEST_BURERRY_HOTEL,HILTON_HOTEL,CLARIN_HOTEL,TEMPLE_GATE_HOTEL;
     public String toString(){
         switch(this){
-            case WEST_HOTEL:
-                return "West Hotel";
+            case WEST_BURERRY_HOTEL:
+                return "West Burberry Hotel";
 
-            case EAST_HOTEL :
-                return "East Hotel";
+            case HILTON_HOTEL :
+                return "Hilton Hotel";
 
-            case NORTH_WEST_HOTEL:
-                return "North West Hotel";
+            case CLARIN_HOTEL:
+                return "Clarin Hotel";
 
-            case TEMPLE_HOTEL:
-                return "Temple Hotel";
+            case TEMPLE_GATE_HOTEL:
+                return "Temple Gate Hotel";
 
             default:
                 return "Unknown Hotel";

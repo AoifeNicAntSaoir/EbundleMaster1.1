@@ -14,8 +14,8 @@ public class FindHotelTester {
         Calendar checkInDate = Calendar.getInstance();
         Calendar checkOutDate = Calendar.getInstance();
 
-        Hotel ErinsHotelChoice = new Hotel(01,NameOfHotel.WEST_HOTEL, "123 Main Street","Dundrum",
-                                   "Dublin","Double Room",checkInDate,checkOutDate);
+        Hotel ErinsHotelChoice = new Hotel(01,NameOfHotel.WEST_BURERRY_HOTEL, "123 Main Street","Dundrum",
+                                   "Dublin",RoomType.DOUBLE_ROOM,checkInDate,checkOutDate);
 
         Hotel hotel = hotelList.search(ErinsHotelChoice);
         if(hotel != null){
@@ -35,10 +35,10 @@ public class FindHotelTester {
              Calendar checkInDate = Calendar.getInstance();
              Calendar checkOutDate = Calendar.getInstance();
 
-          hotelList.addHotel(02,NameOfHotel.EAST_HOTEL, "1 Henry Street", "Limerick City","Limerick","Family",checkInDate,checkOutDate);
+          hotelList.addHotel(02,NameOfHotel.HILTON_HOTEL, "1 Henry Street", "Limerick City","Limerick",RoomType.FAMILY_ROOM,checkInDate,checkOutDate);
 
-          hotelList.addHotel(03,NameOfHotel.NORTH_WEST_HOTEL, "1 O'Connell Street", "Limerick City","Limerick","Twin",checkInDate,checkOutDate);
+          hotelList.addHotel(03,NameOfHotel.CLARIN_HOTEL, "1 O'Connell Street", "Limerick City","Limerick",RoomType.TWIN_ROOM,checkInDate,checkOutDate);
 
-          hotelList.addHotel(04,NameOfHotel.TEMPLE_HOTEL, "The Market Street", "Ennis","Clare","Single",checkInDate,checkOutDate);
+          hotelList.addHotel(04,NameOfHotel.TEMPLE_GATE_HOTEL, "The Market Street", "Ennis","Clare",RoomType.SINGLE_ROOM,checkInDate,checkOutDate);
     }
 }

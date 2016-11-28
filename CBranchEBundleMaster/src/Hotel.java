@@ -12,11 +12,11 @@ public class Hotel {
     private String street;
     private String town;
     private String county;
-    private String roomType;
+    private RoomType roomType;
     private Calendar checkInDate;
     private Calendar checkOutDate;
 
-    public Hotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, String roomType,
+    public Hotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, RoomType roomType,
                   Calendar checkInDate, Calendar checkOutDate)  {
 
 
@@ -52,7 +52,7 @@ public class Hotel {
         this.county = county;
     }
 
-    public void setRoomType(String roomType) {
+    public void setRoomType(RoomType roomType) {
         this.roomType = roomType;
     }
 
@@ -84,7 +84,7 @@ public class Hotel {
         return county;
     }
 
-    public String getRoomType() {
+    public RoomType getRoomType() {
         return roomType;
     }
 

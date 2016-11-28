@@ -13,7 +13,7 @@ public class HotelList {
         hotels = new LinkedList();
     }
 
-    public void addHotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, String roomType,
+    public void addHotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, RoomType roomType,
                          Calendar checkInDate, Calendar checkOutDate){
 
         Hotel hotel = new Hotel(hotelId, nameOfHotel, street, town, county, roomType,
@@ -61,7 +61,7 @@ public class HotelList {
                     (!county.equals((hotel.getCounty()))))
                 continue;
 
-            String roomType = searchHotel.getRoomType();
+            RoomType roomType = searchHotel.getRoomType();
             if((roomType != null) && (!roomType.equals("")) &&
                     (!roomType.equals((hotel.getRoomType()))))
                 continue;

@@ -9,9 +9,9 @@ public class Sports extends Event {
     protected SportsType sportsType;
     protected String team;
 
-    public Sports(EventSpec eventSpec, int eventId, double price,
+    public Sports(EventSpec eventSpec, int eventId,
                    SportsType sportsType, String team){
-        super(eventSpec, eventId, price);
+        super(eventSpec, eventId);
         this.sportsType = sportsType;
         this.team = team;
     }

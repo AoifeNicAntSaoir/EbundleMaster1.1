@@ -1,5 +1,7 @@
 package com.ooad.concert;
 
+import java.util.List;
+
 /**
  * Created by Aoife Sayers on 17/11/2016.
  */
@@ -10,10 +12,9 @@ public class Concert extends Event {
 
     public Concert(final EventSpec eventSpec,
                    final int eventId,
-                   final double price,
                    final int concertID,
                    final Genre genre){
-        super(eventSpec, eventId, price);
+        super(eventSpec, eventId);
         this.concertID = concertID;
         this.genre = genre;
     }
@@ -33,5 +34,7 @@ public class Concert extends Event {
     public void setGenre(Genre genre) {
         this.genre = genre;
     }
+
+
 
 }

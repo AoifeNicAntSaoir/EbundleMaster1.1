@@ -8,9 +8,8 @@ public class ArtsTheatre extends Event {
 
     public ArtsTheatre(final EventSpec eventSpec,
                        final int eventId,
-                       final double price,
                        final ArtType artType){
-        super(eventSpec, eventId, price);
+        super(eventSpec, eventId);
         this.artType = artType;
     }
 

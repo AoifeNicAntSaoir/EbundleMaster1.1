@@ -11,11 +11,8 @@ public class SearchConcertTester {
         EventCatalogue catalogue = new EventCatalogue(new LinkedList<>());
         initialiseEvents(catalogue);
 
-       /* findMatching(new EventCatalogue(event));
-
-        String act, EventClass eventType, Venue venue, Calendar date, double price*/
-
-        findMatching(new EventSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance(), 0.00));
+        catalogue.search(new EventSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance(), 0.00));
+     //   catalogue.findMatching(new EventSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance(), 0.00));
                // Type.ELECTRIC, Wood.ALDER, Wood.ALDER, 6));
 
 
@@ -57,19 +54,19 @@ public class SearchConcertTester {
 
             Calendar date = Calendar.getInstance();
 
+        /*EventSpec eventSpec, int eventId, double price,
+                         ArtType artType, String comedian,int concertId,Genre genre,
+                         SportsType sportsType, String team*/
 
-        //Concerts
-        catalogue.addEvent(new EventSpec("Ariana Grande", "Github all day... Github all night",
-                            EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance()),1234, 45.50);
+        /*String act, EventClass eventType, Venue venue, Calendar date, double price*/
 
-        catalogue.addEvent(new EventSpec("The Weeknd", "I can't feel my face",
-                EventClass.CONCERT, Venue.CROKEPARK, Calendar.getInstance()),2345, 50.50);
+        catalogue.addEvent(new EventSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance(), 45.50),
+                            1234, 4, Genre.POP, SportsType.BASKETBALL, "Joiejaka");
 
-        catalogue.addEvent(new EventSpec("", "Github all day... Github all night",
-                EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance()),1234, 45.50);
 
-        catalogue.addEvent(new EventSpec("Ariana Grande", "Github all day... Github all night",
-                EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance()),1234, 45.50);
+        catalogue.addEvent();
+
+
 
 
     }

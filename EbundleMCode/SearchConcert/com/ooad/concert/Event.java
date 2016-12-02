@@ -14,12 +14,12 @@ public abstract class Event {
     protected int eventId;
 
     //Added this for the event spec
-    public Event(int eventId, double price) {
+    public Event(int eventId) {
         this.eventId = eventId;
 
     }
 
-    public Event(EventSpec eventSpec, int eventId, double price) {
+    public Event(EventSpec eventSpec, int eventId) {
         this.eventSpec = eventSpec;
         this.eventId = eventId;
     }

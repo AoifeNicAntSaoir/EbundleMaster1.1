@@ -1,5 +1,6 @@
 package com.ooad.concert;
 
+import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
@@ -7,23 +8,18 @@ import java.util.List;
 public class SearchConcertTester {
 
     public static void main(String[] args) {
-        // Set up Rick's guitar inventory
-        EventCatalogue catalogue = new EventCatalogue(new LinkedList<>());
+        // Set up catalogue
+        EventCatalogue catalogue = new EventCatalogue(new ArrayList<Event>(), new ArrayList<Concert>(), new ArrayList<Comedy>(),
+                new ArrayList<ArtsTheatre>(),  new ArrayList<Sports>());
+
+
         initialiseEvents(catalogue);
 
         catalogue.search(new EventSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance(), 0.00));
-     //   catalogue.findMatching(new EventSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance(), 0.00));
-               // Type.ELECTRIC, Wood.ALDER, Wood.ALDER, 6));
 
 
-        System.out.println("\nLooking for a mandolin...");
 
-        //EventCatalogue cc = new EventCatalogue();
-
-        //cc.search(new E)
-
-
-               // findMatching(
+        System.out.println("\nLooking for an Ariana Grande Concert...");
 
     }
 
@@ -52,10 +48,9 @@ public class SearchConcertTester {
 
     private static void initialiseEvents(EventCatalogue catalogue) {
 
-         catalogue.addConcert(new EventSpec(Event));
+        
 
 
-        catalogue.addEvent();
 
 
 

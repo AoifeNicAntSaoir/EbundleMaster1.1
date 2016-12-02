@@ -8,34 +8,42 @@ public class SearchConcertTester {
 
     public static void main(String[] args) {
         // Set up Rick's guitar inventory
-        ConcertCatalogue catalogue = new ConcertCatalogue(new LinkedList<>());
+        EventCatalogue catalogue = new EventCatalogue(new LinkedList<>());
         initialiseEvents(catalogue);
 
-        /*findMatching(catalogue, new Concert(Venue.THEMARQUEE, Calendar.getInstance(),  ), "Stratocaster",
-                Type.ELECTRIC, Wood.ALDER, Wood.ALDER, 6));*/
+       /* findMatching(new EventCatalogue(event));
+
+        String act, EventClass eventType, Venue venue, Calendar date, double price*/
+
+        findMatching(new EventSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, Calendar.getInstance(), 0.00));
+               // Type.ELECTRIC, Wood.ALDER, Wood.ALDER, 6));
+
 
         System.out.println("\nLooking for a mandolin...");
 
-        search(new EventSpec("Ariana Grande", ))
+        //EventCatalogue cc = new EventCatalogue();
 
-        findMatching(inventory, new MandolinSpec(Builder.FENDER, "Stratocaster",
-                Type.ELECTRIC, Wood.ALDER, Wood.ALDER, Style.F));
+        //cc.search(new E)
+
+
+               // findMatching(
 
     }
 
 
-    private static void findMatching(final Inventory inventory, final InstrumentSpec whatErinLikes) {
-        List<Instrument> matchingInstruments = inventory.search(whatErinLikes);
-        if (!matchingInstruments.isEmpty()) {
-            for (Instrument match : matchingInstruments) {
+    private static void findMatching(final EventCatalogue catalogue, final EventSpec whatErinLikes) {
+        List<Event> matchingEvents = catalogue.search(whatErinLikes);
+        if (!matchingEvents.isEmpty()) {
+            for (Event match : matchingEvents) {
                 if (match != null) {
-                    InstrumentSpec instrumentSpec = match.getSpec();
+                    EventSpec eventSpec = match.getEventSpec();
                     System.out.println("Erin, you might like this " +
-                            instrumentSpec.getBuilder() + " " + instrumentSpec.getModel() + " " +
-                            instrumentSpec.getType() + " instrument:\n   " +
-                            instrumentSpec.getBackWood() + " back and sides,\n   " +
-                            instrumentSpec.getTopWood() + " top.\nYou can have it for only $" +
-                            match.getPrice() + "!");
+                            eventSpec.getAct() +
+                            eventSpec.getVenue() +
+                            eventSpec.getEventClass() +
+                            eventSpec.getDate() +
+                    eventSpec.getPrice());
+
                 }
             }
         } else {
@@ -45,7 +53,7 @@ public class SearchConcertTester {
 
 
 
-    private static void initialiseEvents(ConcertCatalogue catalogue) {
+    private static void initialiseEvents(EventCatalogue catalogue) {
 
             Calendar date = Calendar.getInstance();
 

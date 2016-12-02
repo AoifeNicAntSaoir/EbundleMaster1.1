@@ -2,33 +2,20 @@ package com.ooad.concert;
 import java.util.ArrayList;
 import java.util.List;
 
-public class ConcertCatalogue {
+public class EventCatalogue {
     protected final List<Event> eventCatalogue;
 
-    protected final List<Concert> concertCatalogue;
-    protected final List<ArtsTheatre> artsTheatreCatalogue;
-    protected final List<Comedy> comedyCatalogue;
-    protected final List<Sports> sportsCatalogue;
 
-
-    public ConcertCatalogue(List<Event> eventCatalogue) {
+    public EventCatalogue(List<Event> eventCatalogue) {
         this.eventCatalogue = eventCatalogue;
-
-        concertCatalogue = new ArrayList<Concert>(); //Type Inference
-        artsTheatreCatalogue = new ArrayList<ArtsTheatre>();
-        comedyCatalogue = new ArrayList<Comedy>();
-        sportsCatalogue = new ArrayList<Sports>();
-
     }
 
     public void addEvent(EventSpec eventSpec, int eventId, double price, ArtType artType, String comedian,
                          int concertId, Genre genre, SportsType sportsType, String team) {
-        Event event;
-        if(eventSpec.getEventClass() == EventClass.ARTSnTHEATRE){
-            event = new ArtsTheatre(eventSpec, eventId, price, artType);
-            eventCatalogue.add(event);
-            //artsTheatreCatalogue.add(e);
-
+            Event event;
+            if(eventSpec.getEventClass() == EventClass.ARTSnTHEATRE){
+                event = new ArtsTheatre(eventSpec, eventId, price, artType);
+                eventCatalogue.add(event);
         }
         else if(eventSpec.getEventClass() == EventClass.COMEDY){
             event = new Comedy(eventSpec, eventId, price, comedian);

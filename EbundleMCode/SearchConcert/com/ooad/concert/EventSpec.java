@@ -6,22 +6,32 @@ import java.util.Calendar;
 /**
  * Created by Aoife Sayers on 28/11/2016.
  */
-public abstract class EventSpec {
+public class EventSpec{
 
-    protected String act;
-    protected EventClass type;
-    protected Venue venue;
-    protected Calendar date;
+    public String act;
+    public EventClass type;
+    public Venue venue;
+    public Calendar date;
+    public double price;
 
-    public EventSpec(String act, String actDescription,
-                     EventClass eventType, Venue venue, Calendar date)
+    public EventSpec(String act, EventClass eventType, Venue venue, Calendar date, double price)
     {
         this.act = act;
         this.type = eventType;
         this.venue = venue;
         this.date = date;
+        this.price = price;
     }
 
+
+
+    public double getPrice() {
+        return price;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
 
     public String getAct() {
         return act;

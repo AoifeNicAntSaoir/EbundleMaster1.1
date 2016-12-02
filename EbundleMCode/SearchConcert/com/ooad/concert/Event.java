@@ -12,19 +12,23 @@ public abstract class Event {
 
     protected EventSpec eventSpec;
     protected int eventId;
-    protected double price;
 
+    //Added this for the event spec
+    public Event(int eventId, double price) {
+        this.eventId = eventId;
 
-    public Event(EventSpec eventSpec, int eventId, double price)
-    {
+    }
+
+    public Event(EventSpec eventSpec, int eventId, double price) {
         this.eventSpec = eventSpec;
         this.eventId = eventId;
-        this.price = price;
     }
 
-    public EventSpec getEventSpec(){
+
+    public EventSpec getEventSpec() {
         return eventSpec;
     }
+
     public void setEventSpec(EventSpec eventSpec) {
         this.eventSpec = eventSpec;
     }
@@ -37,12 +41,4 @@ public abstract class Event {
         this.eventId = eventId;
     }
 
-    public double getPrice() {
-        DecimalFormat df2 = new DecimalFormat(".##");
-        return Double.parseDouble(df2.format(price));
-    }
-
-    public void setPrice(double price) {
-        this.price = price;
-    }
 }

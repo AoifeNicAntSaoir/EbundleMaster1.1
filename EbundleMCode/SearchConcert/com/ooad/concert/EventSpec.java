@@ -9,7 +9,6 @@ import java.util.Calendar;
 public abstract class EventSpec {
 
     protected String act;
-    protected String actDescription;
     protected EventClass type;
     protected Venue venue;
     protected Calendar date;
@@ -18,7 +17,6 @@ public abstract class EventSpec {
                      EventClass eventType, Venue venue, Calendar date)
     {
         this.act = act;
-        this.actDescription = actDescription;
         this.type = eventType;
         this.venue = venue;
         this.date = date;
@@ -31,14 +29,6 @@ public abstract class EventSpec {
 
     public void setAct(String act) {
         this.act = act;
-    }
-
-    public String getActDescription() {
-        return actDescription;
-    }
-
-    public void setActDescription(String actDescription) {
-        this.actDescription = actDescription;
     }
 
     public EventClass getEventClass() {
@@ -68,9 +58,6 @@ public abstract class EventSpec {
     public boolean matches(EventSpec anEvent) {
         if (isSpecified(anEvent.getAct())) {
             return this.act.equalsIgnoreCase(anEvent.getAct());
-        }
-        if (isSpecified(anEvent.getActDescription())) {
-            return this.actDescription.equalsIgnoreCase(anEvent.getActDescription());
         }
         if (isSpecified(anEvent.getVenue())) {
             return this.venue == anEvent.getVenue();

@@ -4,23 +4,25 @@ import java.util.Calendar;
 import java.util.LinkedList;
 import java.util.List;
 
+public class SearchConcertTester {
 
     public static void main(String[] args) {
         // Set up Rick's guitar inventory
         ConcertCatalogue catalogue = new ConcertCatalogue(new LinkedList<>());
         initialiseEvents(catalogue);
 
-        findMatching(catalogue, new Concert
-                Venue.THEMARQUEE, Calendar.getInstance(),  ), "Stratocaster",
-                Type.ELECTRIC, Wood.ALDER, Wood.ALDER, 6));
+        /*findMatching(catalogue, new Concert(Venue.THEMARQUEE, Calendar.getInstance(),  ), "Stratocaster",
+                Type.ELECTRIC, Wood.ALDER, Wood.ALDER, 6));*/
 
         System.out.println("\nLooking for a mandolin...");
 
+        search(new EventSpec("Ariana Grande", ))
 
         findMatching(inventory, new MandolinSpec(Builder.FENDER, "Stratocaster",
                 Type.ELECTRIC, Wood.ALDER, Wood.ALDER, Style.F));
 
     }
+
 
     private static void findMatching(final Inventory inventory, final InstrumentSpec whatErinLikes) {
         List<Instrument> matchingInstruments = inventory.search(whatErinLikes);

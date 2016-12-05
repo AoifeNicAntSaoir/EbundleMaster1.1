@@ -1,4 +1,4 @@
-import java.util.Date;
+
 import java.util.Iterator;
 import java.util.LinkedList;
 import java.util.List;
@@ -20,11 +20,8 @@ public class RestaurantList {
     }
 
     public Restaurant getRestaurant(int restID) {
-        for(Iterator i = restaurants.iterator();i.hasNext();)
-        {
-            Restaurant restaurant = (Restaurant)i.next();
-            if(restaurant.getRestID() == (restID))
-            {
+        for (Restaurant restaurant : restaurants) {
+            if (restaurant.getRestID() == (restID)) {
                 return restaurant;
             }
         }
@@ -32,21 +29,19 @@ public class RestaurantList {
     }
 
     public Restaurant search(Restaurant searchRestaurant) {
-        for(Iterator i = restaurants.iterator();i.hasNext();) {
-            Restaurant restaurant = (Restaurant)i.next();
-
+        for (Restaurant restaurant : restaurants) {
             RestaurantName restName = searchRestaurant.getRestName();
-            if((restName!= null) && (!restName.equals((""))) &&
+            if ((restName != null) && (!restName.equals((""))) &&
                     (!restName.equals(restaurant.getRestName())))
                 continue;
 
             RestaurantType restType = searchRestaurant.getRestType();
-            if((restType != null) && (!restType.equals((""))) &&
+            if ((restType != null) && (!restType.equals((""))) &&
                     (!restType.equals(restaurant.getRestType())))
                 continue;
 
             RestaurantLocation restLocation = searchRestaurant.getRestLocation();
-            if((restLocation != null) && (!restLocation.equals((""))) &&
+            if ((restLocation != null) && (!restLocation.equals((""))) &&
                     (!restLocation.equals(restaurant.getRestLocation())))
                 continue;
             return restaurant;

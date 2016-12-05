@@ -13,11 +13,11 @@ public class HotelList {
         hotels = new LinkedList();
     }
 
-    public void addHotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, RoomType roomType/*,
-                         Calendar checkInDate, Calendar checkOutDate*/){
+    public void addHotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, RoomType roomType,
+                         Calendar checkInDate, Calendar checkOutDate){
 
-        Hotel hotel = new Hotel(hotelId, nameOfHotel, street, town, county, roomType/*,
-                                  checkInDate, checkOutDate*/);
+        Hotel hotel = new Hotel(hotelId, nameOfHotel, street, town, county, roomType,
+                                  checkInDate, checkOutDate);
 
         hotels.add(hotel);
     }
@@ -66,7 +66,7 @@ public class HotelList {
                     (!roomType.equals(hotel.getRoomType())))
                 continue;
 
-            /*Calendar checkInDate = searchHotel.getCheckInDate();
+            Calendar checkInDate = searchHotel.getCheckInDate();
             if((checkInDate != null) && (!checkInDate.equals("")) &&
                     (!checkInDate.equals(hotel.getCheckInDate())))
                 continue;
@@ -74,7 +74,9 @@ public class HotelList {
             Calendar checkOutDate = searchHotel.getCheckOutDate();
             if((checkOutDate != null) && (!checkOutDate.equals("")) &&
                     (!checkOutDate.equals(hotel.getCheckOutDate())))
-                continue;*/
+                continue;
+
+
 
             return hotel;
 

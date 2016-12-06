@@ -2,25 +2,20 @@
  * Created by dylantiklunchan on 21/11/2016.
  */
 
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 
 //superClass
 public class Hotel {
 
-    SimpleDateFormat fmt = new SimpleDateFormat("yyyy-MM-dd");
     private int hotelId;
     private NameOfHotel nameOfHotel;
     private String street;
     private String town;
-    private String county;
+    private County county;
     private RoomType roomType;
     private String checkInDate;
     private String checkOutDate;
 
-    public Hotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, String county, RoomType roomType,
+    public Hotel(int hotelId, NameOfHotel nameOfHotel, String street, String town, County county, RoomType roomType,
                   String checkInDate, String checkOutDate)  {
 
 
@@ -52,7 +47,7 @@ public class Hotel {
         this.town = town;
     }
 
-    public void setCounty(String county) {
+    public void setCounty(County county) {
         this.county = county;
     }
 
@@ -84,7 +79,7 @@ public class Hotel {
         return town;
     }
 
-    public String getCounty() {
+    public County getCounty() {
         return county;
     }
 

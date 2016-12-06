@@ -1,7 +1,3 @@
-import java.text.SimpleDateFormat;
-import java.util.Calendar;
-import java.util.Date;
-
 /**
  * Created by dylantiklunchan on 21/11/2016.
  */
@@ -12,13 +8,8 @@ public class FindHotelTester {
         HotelList hotelList = new HotelList();
         intitializeHotelList(hotelList);
 
-        //Calendar checkInDate = Calendar.getInstance();
-        //Calendar checkOutDate = Calendar.getInstance();
 
-
-
-
-        Hotel hotelChoice = new Hotel(1234, NameOfHotel.WEST_BURERRY_HOTEL, "123 Main Street", "Dundrum","Dublin",RoomType.DOUBLE_ROOM,"12/12/2016","27/1/2017");
+        Hotel hotelChoice = new Hotel(1, NameOfHotel.WEST_BURERRY_HOTEL, "123 Main Street", "Dundrum",County.CO_DUBLIN,RoomType.DOUBLE_ROOM,"12/12/2016","27/1/2017");
 
         Hotel hotel = hotelList.search(hotelChoice);
         if(hotel != null)
@@ -41,16 +32,14 @@ public class FindHotelTester {
     }
 
     private static void intitializeHotelList(HotelList hotelList) {
+        
 
-             //Calendar checkInDate = Calendar.getInstance();
-             //Calendar checkOutDate = Calendar.getInstance();
+          hotelList.addHotel(1, NameOfHotel.WEST_BURERRY_HOTEL, "123 Main Street", "Dundrum",County.CO_DUBLIN,RoomType.DOUBLE_ROOM,"12/12/2016","27/1/2017");
 
-          hotelList.addHotel(01, NameOfHotel.WEST_BURERRY_HOTEL, "123 Main Street", "Dundrum","Dublin",RoomType.DOUBLE_ROOM,"12/12/2016","27/1/2017");
+          hotelList.addHotel(2,NameOfHotel.HILTON_HOTEL, "1 Henry Street", "Limerick City",County.CO_LIMERICK,RoomType.FAMILY_ROOM,"12/11/2016","20/11/2016");
 
-          hotelList.addHotel(02,NameOfHotel.HILTON_HOTEL, "1 Henry Street", "Limerick City","Limerick",RoomType.FAMILY_ROOM,"","");
+          hotelList.addHotel(3,NameOfHotel.CLARIN_HOTEL, "1 O'Connell Street", "Limerick City",County.CO_LIMERICK,RoomType.TWIN_ROOM,"13/09/2016","15/09/2016");
 
-          hotelList.addHotel(03,NameOfHotel.CLARIN_HOTEL, "1 O'Connell Street", "Limerick City","Limerick",RoomType.TWIN_ROOM,"","");
-
-          hotelList.addHotel(04,NameOfHotel.TEMPLE_GATE_HOTEL, "The Market Street", "Ennis","Clare",RoomType.SINGLE_ROOM,"","");
+          hotelList.addHotel(4,NameOfHotel.TEMPLE_GATE_HOTEL, "The Market Street", "Ennis",County.CO_CLARE,RoomType.SINGLE_ROOM,"17/06/2016","25/06/2016");
     }
 }

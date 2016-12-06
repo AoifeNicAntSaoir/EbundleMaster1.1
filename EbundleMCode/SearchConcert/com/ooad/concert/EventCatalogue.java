@@ -5,9 +5,6 @@ import java.util.List;
 
 public class EventCatalogue {
     protected List<Event> eventCatalogue;
-    protected List<Concert> concertCatalogue;
-
-
 
     public EventCatalogue(ArrayList<Event> eventCatalogue){
         this.eventCatalogue = eventCatalogue;
@@ -20,33 +17,18 @@ public class EventCatalogue {
         }
         else if(eventSpec instanceof ArtsSpec )
         {
-
+            event = new ArtsTheatre((ArtsSpec)eventSpec,eventId, price);
         }
         else if(eventSpec instanceof ComedySpec)
         {
-
+            event = new Comedy((ComedySpec)eventSpec, eventId,price);
         }
         else if(eventSpec instanceof SportsSpec)
         {
+            event = new Sports((SportsSpec)eventSpec, eventId,price);
 
         }
-        else if(eventSpec instanceof ArtsSpec)
-        {
-
-        }
-        else if(eventSpec instanceof EventSpec)
-        {
-
-        }
-
-
-
     }
-
-
-
-
-
 
     public Event getEvent(int eventId) {
         for (Event event : eventCatalogue) {
@@ -70,12 +52,12 @@ public class EventCatalogue {
     }
 
 
-    public List<Concert> searchConcert(EventSpec spec) {
-        List<Concert> matchingEvent = new ArrayList<>();
-        for (Concert event : concertCatalogue) {
+    public List<Event> searchEvent(EventSpec spec) {
+        List<Event> matchingEvent = new ArrayList<>();
+        for (Event event : eventCatalogue) {
             EventSpec eventSpec = event.getEventSpec();
             if (eventSpec.matches(spec)) {
-                concertCatalogue.add(event);
+                eventCatalogue.add(event);
             }
         }
         return matchingEvent;

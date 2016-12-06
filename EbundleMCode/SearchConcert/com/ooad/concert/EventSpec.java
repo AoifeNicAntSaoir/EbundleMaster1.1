@@ -6,7 +6,7 @@ import java.util.Calendar;
 /**
  * Created by Aoife Sayers on 28/11/2016.
  */
-public class EventSpec {
+public abstract class EventSpec {
 
     protected String act;
     protected EventClass type;

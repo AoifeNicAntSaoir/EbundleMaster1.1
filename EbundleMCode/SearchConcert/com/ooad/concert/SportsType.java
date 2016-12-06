@@ -46,7 +46,7 @@ public enum SportsType {
             case SQUASH:
                 return "Squash";
             case WRESTLING:
-                return "Squash";
+                return "Wrestling";
             default:
                 return "Unknown";
 

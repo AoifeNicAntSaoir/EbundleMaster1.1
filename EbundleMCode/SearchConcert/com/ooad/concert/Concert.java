@@ -7,33 +7,26 @@ import java.util.List;
  */
 public class Concert extends Event {
 
-    protected int concertID;
-    protected Genre genre;
+    private ConcertSpec concertSpec;
 
     public Concert(final EventSpec eventSpec,
-                   final int eventId,
-                   final int concertID,
-                   final Genre genre){
-        super(eventSpec, eventId);
-        this.concertID = concertID;
-        this.genre = genre;
+                   int eventId,
+                   double price){
+        super(eventSpec, eventId, price);
+        this.concertSpec = concertSpec;
+
     }
 
-    public int getConcertID() {
-        return concertID;
+
+
+    public ConcertSpec getConcertSpec() {
+        return concertSpec;
     }
 
-    public void setConcertID(int concertID) {
-        this.concertID = concertID;
+    public void setConcertSpec(ConcertSpec concertSpec) {
+        this.concertSpec = concertSpec;
     }
 
-    public Genre getGenre() {
-        return genre;
-    }
-
-    public void setGenre(Genre genre) {
-        this.genre = genre;
-    }
 
 
 

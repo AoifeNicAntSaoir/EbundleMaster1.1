@@ -3,7 +3,7 @@ package com.ooad.concert;
 /**
  * Created by Aoife Sayers on 27/11/2016.
  */
-public enum ArtType {
+public enum ArtsType {
 
     BALLET, DANCE, DRAMA, MUSICALS, FILM;
 

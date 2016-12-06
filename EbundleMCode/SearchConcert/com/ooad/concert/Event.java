@@ -12,22 +12,19 @@ public abstract class Event {
 
     protected EventSpec eventSpec;
     protected int eventId;
+    protected double price;
 
     //Added this for the event spec
-    public Event(int eventId) {
+    public Event(EventSpec eventSpec,int eventId, double price) {
         this.eventId = eventId;
+        this.price = price;
 
     }
 
-    public Event(EventSpec eventSpec, int eventId) {
-        this.eventSpec = eventSpec;
-        this.eventId = eventId;
-    }
-
-
-    public EventSpec getEventSpec() {
+    public EventSpec getEventSpec(){
         return eventSpec;
     }
+
 
     public void setEventSpec(EventSpec eventSpec) {
         this.eventSpec = eventSpec;

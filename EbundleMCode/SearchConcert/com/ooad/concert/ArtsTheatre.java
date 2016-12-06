@@ -1,27 +1,19 @@
 package com.ooad.concert;
 
 /**
- * Created by Aoife Sayers on 27/11/2016.
+ * Created by Aoife Sayers on 06/12/2016.
  */
 public class ArtsTheatre extends Event {
-    private ArtType artType;
+
+    private ArtsSpec artsSpec;
 
     public ArtsTheatre(final EventSpec eventSpec,
-                       final int eventId,
-                       final ArtType artType){
-        super(eventSpec, eventId);
-        this.artType = artType;
+                   int eventId,
+                   double price){
+        super(eventSpec, eventId, price);
+        this.artsSpec = artsSpec;
+
     }
-
-
-    public ArtType getArtType() {
-        return artType;
-    }
-
-    public void setArtType(ArtType artType) {
-        this.artType = artType;
-    }
-
 
 
 }

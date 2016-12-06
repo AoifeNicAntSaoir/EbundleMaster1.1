@@ -1,26 +1,16 @@
 package com.ooad.concert;
 
-import java.util.Calendar;
-
 /**
- * Created by Aoife Sayers on 27/11/2016.
+ * Created by Aoife Sayers on 06/12/2016.
  */
 public class Comedy extends Event {
 
-    protected String comedian;
+    private ComedySpec comedySpec;
 
     public Comedy(final EventSpec eventSpec,
-                  final int eventId,
-                  final String comedian){
-        super(eventSpec, eventId);
-        this.comedian = comedian;
-    }
-
-    public String getComedian(){
-        return comedian;
-    }
-
-    public void setComedian(String comedian){
-        this.comedian = comedian;
+                   int eventId,
+                   double price){
+        super(eventSpec, eventId, price);
+        this.comedySpec = comedySpec;
     }
 }

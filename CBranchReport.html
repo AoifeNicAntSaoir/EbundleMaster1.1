@@ -18,6 +18,11 @@
       <h2 style="text-align: center; ">Dylan Tik Lun Chan<br>
           Too173201<br>
           Computing with Games Development<br></h2>
+       <h2>Team members</h2>
+       <p>Dylan Chan</p>
+       <p>Aoife Saoir</p>
+       <p>Suki Chan</p>
+
           
       <h2>Project Title</h2>
         <p>Ebundle Master</p>
@@ -40,28 +45,46 @@
       
       <h2>Snapshot of my own detailed code commit comments </h2>
         <img src="CBranchCommitScreenshot.png" alt="commit details" width="800">
+
+      <h2>Domain Model</h2>
+        <img src="DomainModelScreenshot.png" alt="Domain Model" width="800">
                       
       <h2>Snapshot of merged commits</h2>
 
       <h2>Introduction</h2>
       <p> As a group we first came of with an idea of a online booking ticket system. then our lecturer suggested that we can add my functions to it
           to make it more unique so we added functions such as able to search and book for transports, hotels and restuarants. As a group we decided on the eBundleMaster.
-           As a group we divded list of task that for brief, casual and fully dressed use cases. 
-           I has tasked with Add to cart, Book Concert, Search for hotel, Select hotel location, Select check-in date, Select check-out date, Select room type, and book hotel (Brief and casual use case). For fully dressed use case i did Add to cart, Book concert, Search for hotel and Book hotel.
+          As a group we divded list of task that for brief, casual and fully dressed use cases.
+          I has tasked with Add to cart, Book Concert, Search for hotel, Select hotel location, Select check-in date, Select check-out date, Select room type, and book hotel (Brief and casual use case). For fully dressed use case i did Add to cart, Book concert, Search for hotel and Book hotel. For coding phase of the project I was tasked with with Search for Hotel.</p>
 
-        </p>>
+       <h2>Streamlined Object Modeling</h2>
+       <ol>
+          <li>People ==> Customer</li>
+          <li>Event  ==> Search</li>
+          <li>Thing  ==> Room</li>
+          <li>Place  ==> Hotel</li>
+       	
+       </ol>
+
+       <h2> Refactorig</h2>
+       <ol>
+           <li> Performed Code Analysis Using IntellJ, changes I made with Code Analyse: 1.changed for loop In HotelList class to enhance loop, this improves efficency on seraching. 2. removed unused imports.</li>
+
+           <ol>
       
-      <h2>List of changes made </h2>
+      <h2>Code Smells</h2>
           <ol>
               <li> Created 3 enum class for nameOfHotel, roomType and county, I named the enum classes NameOfHotel, RoomType and County. The reason why I created the 3 enum classes is for type saftey. That means that only values in NameOfHotel and RoomTypes enum classes are allowed.</li>
               <li> I also did Shotgun Surgery because I created 2 enum classes I have to make many small changes across Hotel,HotelList and FindHotelTester classes.</li>
-              <li> Did Code Analysis Using intellJ, changes I made with Code Analyse: 1.changed for loop In HotelList class to enhance loop, this improves efficency on seraching. 2. removed unused imports.</li>
-              <li>Got rid of some String types(Primitive Obsession) e.g initial nameOfhotel, roomType and county were type String.</li>
+              <li> Got rid of some String types(Primitive Obsession) e.g initial nameOfhotel, roomType and county were type String is now enum type.</li>
+              <li> I Added Switch statements and toString methods to enum classes so for readability when it outputs data.</li>
+              <li> Encapsulation, setting attributes to private.</li>>
           </ol>
       <h2>Evaluation</h2>
           <ol>
-              <li> </li>
-              <li> </li>
+              <li>As a group we worked very well together, we met up outside of class to work on the project,critique and help each other when any one of
+                  us encoutered difficulties with the project.</li>
+              <li>Good communication between team members.</li>
               
           </ol>
           

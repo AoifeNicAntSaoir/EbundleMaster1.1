@@ -5,7 +5,7 @@ package com.ooad.concert;
  */
 public class ComedySpec extends EventSpec {
 
-    final String comedian;
+    protected String comedian;
 
     public ComedySpec(String act, EventClass eventType, Venue venue,
                       final int eventId, final String comedian){
@@ -13,14 +13,13 @@ public class ComedySpec extends EventSpec {
         this.comedian = comedian;
     }
 
-
-    @Override
-    public boolean matches(final EventSpec otherSpec) {
-        if (!(otherSpec instanceof ComedySpec))
-            return false;
-        if (!super.matches(otherSpec))
-            return false;
-        ComedySpec spec = (ComedySpec)otherSpec;
-        return comedian == spec.comedian;
+    public String getComedian(){
+        return comedian;
     }
+
+    public void setComedian(String comedian){
+        this.comedian = comedian;
+    }
+
+
 }

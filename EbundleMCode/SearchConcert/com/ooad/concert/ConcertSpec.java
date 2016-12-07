@@ -5,32 +5,25 @@ package com.ooad.concert;
  */
 public class ConcertSpec extends EventSpec {
 
-    protected int concertID;
-    protected Genre genre;
+    final Genre genre;
 
-    public ConcertSpec(String act, EventClass eventType, Venue venue, /*Calendar date*/double price, int concertID, Genre genre)
+    public ConcertSpec(String act, EventClass eventType, Venue venue, Genre genre)
     {
         super(act,eventType,venue);
-        this.concertID = concertID;
+
         this.genre = genre;
     }
 
-
-    public int getConcertID() {
-        return concertID;
+    @Override
+    public boolean matches(final EventSpec otherSpec) {
+        if (!(otherSpec instanceof ConcertSpec))
+            return false;
+        if (!super.matches(otherSpec))
+            return false;
+        ConcertSpec spec = (ConcertSpec) otherSpec;
+        return genre.equals(spec.genre);
     }
 
-    public void setConcertID(int concertID) {
-        this.concertID = concertID;
-    }
-
-    public Genre getGenre() {
-        return genre;
-    }
-
-    public void setGenre(Genre genre) {
-        this.genre = genre;
-    }
 
 
 

@@ -5,7 +5,7 @@ package com.ooad.concert;
  */
 public class ArtsSpec extends EventSpec {
 
-    private ArtsType artType;
+    private final ArtsType artType;
 
     public ArtsSpec(String act, EventClass eventType, Venue venue,
                        final int eventId,
@@ -19,8 +19,14 @@ public class ArtsSpec extends EventSpec {
         return artType;
     }
 
-    public void setArtType(ArtsType artType) {
-        this.artType = artType;
+    @Override
+    public boolean matches(final EventSpec otherSpec) {
+        if (!(otherSpec instanceof ArtsSpec))
+            return false;
+        if (!super.matches(otherSpec))
+            return false;
+        ArtsSpec spec = (ArtsSpec) otherSpec;
+        return artType.equals(spec.artType);
     }
 
 }

@@ -5,13 +5,10 @@ package com.ooad.concert;
  */
 public class Sports extends Event {
 
-    private SportsSpec sportsSpec;
 
-    public Sports(final EventSpec eventSpec,
-                   int eventId,
-                   double price){
+    public Sports(final SportsSpec eventSpec,
+                  final int eventId,
+                  final double price){
         super(eventSpec, eventId, price);
-        this.sportsSpec = sportsSpec;
-
     }
 }

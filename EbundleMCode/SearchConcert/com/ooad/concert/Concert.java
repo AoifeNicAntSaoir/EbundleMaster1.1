@@ -7,26 +7,14 @@ import java.util.List;
  */
 public class Concert extends Event {
 
-    private ConcertSpec concertSpec;
 
-    public Concert(final EventSpec eventSpec,
-                   int eventId,
-                   double price){
+    public Concert(final ConcertSpec eventSpec,
+                   final int eventId,
+                   final double price)
+    {
         super(eventSpec, eventId, price);
-        this.concertSpec = concertSpec;
 
     }
-
-
-
-    public ConcertSpec getConcertSpec() {
-        return concertSpec;
-    }
-
-    public void setConcertSpec(ConcertSpec concertSpec) {
-        this.concertSpec = concertSpec;
-    }
-
 
 
 

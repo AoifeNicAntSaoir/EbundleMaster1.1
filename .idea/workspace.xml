@@ -2,24 +2,24 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="99fb7137-dad1-40dd-9342-08586e1d8bae" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/EbundleMaster1.1.iml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/copyright/profiles_settings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/misc.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/uiDesigner.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/compiler.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/vcs.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/ConcertCatalogue.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Genre.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Venue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/EbundleMaster1.1.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchForConcert.iml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/copyright/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Venue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Genre.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/ConcertCatalogue.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/.idea/misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/EbundleMCode/SearchConcert/com/ooad/concert/Concert.java" afterPath="" />
     </list>
     <ignored path="EbundleMCode.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,19 +78,22 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EbundleMCode" />
+              <option name="myItemId" value="EbundleMaster1.1" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
     </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/EbundleMCode" />
   </component>
   <component name="RunManager">
     <configuration default="true" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" factoryName="Plugin">

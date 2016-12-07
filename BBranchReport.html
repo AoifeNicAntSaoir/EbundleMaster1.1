@@ -21,6 +21,11 @@
           
       <h2>Project Title</h2>
         <p>Ebundle Master</p>
+		
+	  <h2>Team members</h2>
+		<p>Aoife Sayers - A</p>
+		<p>Suki Chan - B</p>
+		<p>Dylan Chan - C</p>
       
       <h2>Vision Statement</h2>
         <p>An e-ticketing system that allows customers to purchase concert and 
@@ -46,22 +51,58 @@
            <li>Confirm Booking Detail</li>
 		   </ul> 
 		   After writing brief use cases, I developed them into casual, then into fully-dressed. 
-		   For the 
 		   My team then conducted a critique on my fully-dressed use cases and gave their feedback and 
 		   recommendations for improvement.I then made changes to each full-dressed use cases according 
 		   to those feedback.  
 		</p>
 		
 	  <h2>Search for restauarant</h2>
-	  <p>I chose Search for restaurant component to developed further on. I identified the four types of nouns, i.e.
-		 <ul>
-		   <li>People - Customer</li>
-           <li>Event - Search for Restaurant</li>
-           <li>Place - EBundleMaster (Online)</li>
-		   </ul> 
-		  
-	  </p>
-      
+		<p>I chose Search for restaurant component to developed further on. I first identified the four types of nouns, i.e.
+		<ul>
+			<li>People - Customer</li>
+			<li>Event - Search for Restaurant</li>
+			<li>Place - Restaurant</li>
+			<li>Thing - Table (to book a table)</li>
+		</ul>
+		   When I initially start writing code to do the search, I followed a similiar approach to Rick's Guitar. 
+		   I had three Classes Restaurant, RestaurantList and FindRestaurantTester.
+		</p>
+		
+	  <h2>Snapshot of my Domain Model </h2>
+        <img src="B-DomainModel.png" alt="Domain Model" width="900">
+
+	  <h2>S.O.L.I.D Principles</h2>
+		<ol>
+			<li>S - Single-responsibility principle: A class should only have one reason to change</li>
+			<li>O - Open-closed principle: A class should be easily extendable without modifying the class itself</li>
+			<li>L - Liskov subsitution principle: Subclasses should be substitutable for their base class</li>
+			<li>I - Interface segregation principle: Classes should not be forced to implement interfaces they don't use</li>
+			<li>D - Dependency Inversion principle: Entities must depend on abstractions not on concretions</li>
+		</ol>
+		<p>In my search for restauarant program, I have applied Single-responsiblity principle
+		   and Dependency Inversion principle by creating Restaurant and RestaurantList classes.			   
+		   Restaurant class models a restaurant object and RestaurantList class in charge of storing and finding list
+		   of restaurants.
+		</p>	
+		
+	  <h2>Code Smells</h2>
+		<ol>
+			<li>Primitive Obssession: Use of primitives instead of small objects for simple tasks</li>
+			<li>Type Safety: Ensures that program behaviors are well defined.</li>
+			<li>Data Class: A class that contains only fields and crude methods for accessing them. </li>
+			<li>Shotgun Surgery: making any modification requires to make many small changes to different classes </li>
+		</ol>
+	  <h2>Refactoring</h2>
+	  
+	  <h2>Conclusion</h2>
+        <p>The project has been interesting. As a team we collabrated well. We comminucated since the start and we would meet often to discuss our
+		   progress. We would also give feedback on each other's work which really helped when I was writing my use cases. I have learned to use 
+		   new tool such as Github for version control and I found this very useful in tracking what I did previously. I learned that writing 
+		   good and meaningful commit messages is very important as it allows other team memebers to understand what I have done. Also refractoring my 
+		   code to make it readable and less complex.
+		</p>
+	  
+		<p> </p>
       <h2>Link to individual github repository </h2>
         <p>My individual branch was the BBranch located at</p>
         <a href="https://github.com/AoifeNicAntSaoir/EbundleMaster1.1/tree/BBranch">https://github.com/AoifeNicAntSaoir/EbundleMaster1.1/tree/BBranch</a>
@@ -70,18 +111,13 @@
         <p>The master branch is located at</p>
         <a href="https://github.com/AoifeNicAntSaoir/EbundleMaster1.1">https://github.com/AoifeNicAntSaoir/EbundleMaster1.1</a>
       
-      <h2>Snapshot of your own detailed code commit comments </h2>
+      <h2>Snapshot of my Github commit messages </h2>
         <img src="BBranchCommitScreenshot.png" alt="commit details" width="800">
 		<p>See myGitLog.txt for more commit messages</p>
                       
       <h2>Snapshot of merged commits</h2>
       
-      <h2>Evaluation</h2>
-          <p>The project has been interesting. As a team we collabrated well. We comminucated since the start and we would meet often to discuss our
-			 progress. We would also give feedback on each other's work which really helped when I was writing my use cases. I have learned to use 
-			 new tool such as Github for version control and I found this very useful in tracking what I did previously. I learned that writing 
-			 good and meaningful commit message is very important as it allows other team memebers to understands what I have done. 
-		  </p>
+      
           
   </body>
 </html>

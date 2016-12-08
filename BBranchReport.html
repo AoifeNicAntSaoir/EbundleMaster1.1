@@ -30,7 +30,7 @@
       <h2>Vision Statement</h2>
         <p>An e-ticketing system that allows customers to purchase concert and 
             performance tickets, select date and location of concert, purchase 
-            ticket.In addtion the system offers bundles to customers which 
+            ticket.In addition the system offers bundles to customers which
             allows them to search for transport such as bus and train, hotel
             room and restaurant.
         </p>
@@ -56,7 +56,7 @@
 		   to those feedback.  
 		</p>
 		
-	  <h2>Search for restauarant</h2>
+	  <h2>Search for restaurant</h2>
 		<p>I chose Search for restaurant component to developed further on. I first identified the four types of nouns, i.e.
 		<ul>
 			<li>People - Customer</li>
@@ -64,8 +64,8 @@
 			<li>Place - Restaurant</li>
 			<li>Thing - Table (to book a table)</li>
 		</ul>
-		   When I initially start writing code to do the search, I followed a similiar approach to Rick's Guitar. 
-		   I had three Classes Restaurant, RestaurantList and FindRestaurantTester.
+		   When I initially start writing code to do the search, I followed a similar approach to Rick's Guitar.
+		   I started off with three Classes, Restaurant, RestaurantList and FindRestaurantTester.
 		</p>
 		
 	  <h2>Snapshot of my Domain Model </h2>
@@ -79,7 +79,7 @@
 			<li>I - Interface segregation principle: Classes should not be forced to implement interfaces they don't use</li>
 			<li>D - Dependency Inversion principle: Entities must depend on abstractions not on concretions</li>
 		</ol>
-		<p>In my search for restauarant program, I have applied Single-responsiblity principle
+		<p>In my search for restauarant program, I have applied Single-responsibility principle
 		   and Dependency Inversion principle by creating Restaurant and RestaurantList classes.			   
 		   Restaurant class models a restaurant object and RestaurantList class in charge of storing and finding list
 		   of restaurants.
@@ -87,26 +87,28 @@
 		
 	  <h2>Code Smells</h2>
 		<ol>
-			<li>Primitive Obssession: Use of primitives instead of small objects for simple tasks</li>
+			<li>Primitive Obsession: Use of primitives instead of small objects for simple tasks.</li>
 			<li>Type Safety: Ensures that program behaviors are well defined.</li>
-			<li>Data Class: A class that contains only fields and crude methods for accessing them. </li>
-			<li>Shotgun Surgery: making any modification requires to make many small changes to different classes </li>
+			<li>Data Class: A class that contains only fields and crude methods for accessing them.</li>
+			<li>Shotgun Surgery: making any modification requires to make many small changes to different classes.</li>
+			<li>Feature Envy: A method accesses the data of another object more than its own data.</li>
+			<li>Inappropriate Intimacy: One class uses the internal fields and methods of another class.</li>
 		</ol>
 		<p>In my search for restauarant program, I have removed smells like Primitive Obssession and shotgun surgery by creating enum classes for
-           Restaurant Type,restaurant location and restauarant name. This will ensure type safety and no need type casting. I have also used generic types
-		   on my Restaurant object for better code reusability.
+           Restaurant Type,restaurant location and restaurant name. This will ensure type safety and no need type casting. I have also used generic types
+		   on my Restaurant object for better code re-usability.
     	</p>
 	  <h2>Refactoring</h2>
 		<p>Refactoring reduce the risk of introducing errors, improving code readability and reduced complexity. 
-		   In my program I used encapsulate field (Restaurant Class), forcing code to access the field with getter and setter method. I also used enhanced
-		   for loop instead of an iterator. This improve readability and clarity.
+		   In my program I used encapsulate field (Restaurant Class), making attribute private and allows access to the field with getter and setter
+			method. I also used enhanced for loop instead of an iterator. This improves the readability and clarity of my code.
 		</p>
 	  <h2>Conclusion</h2>
-        <p>The project has been interesting. As a team we collabrated well. We comminucated since the start and we would meet often to discuss our
+        <p>The project has been interesting. As a team we collaborated well. We communicated since the start and we would meet often to discuss our
 		   progress. We would also give feedback on each other's work which really helped when I was writing my use cases. I have learned to use 
 		   new tool such as Github for version control and I found this very useful in tracking what I did previously. I learned that writing 
-		   good and meaningful commit messages is very important as it allows others to understand what I have done. Also refactoring my
-		   code to make it readable and less complex.
+		   good and meaningful commit messages is very important as it allows others to understand what I have done. I also learned the importance of
+			refactoring my code to make it readable and less complex.
 		</p>
 	  
 		<p> </p>

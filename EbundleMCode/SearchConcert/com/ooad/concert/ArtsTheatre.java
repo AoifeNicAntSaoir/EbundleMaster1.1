@@ -5,13 +5,12 @@ package com.ooad.concert;
  */
 public class ArtsTheatre extends Event {
 
-    private ArtsSpec artsSpec;
 
     public ArtsTheatre(final EventSpec eventSpec,
-                   int eventId,
-                   double price){
+                       int eventId,
+                       double price){
         super(eventSpec, eventId, price);
-        this.artsSpec = artsSpec;
+
 
     }
 

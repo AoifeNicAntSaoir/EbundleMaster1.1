@@ -7,8 +7,11 @@ public class ComedySpec extends EventSpec {
 
     protected String comedian;
 
-    public ComedySpec(String act, EventClass eventType, Venue venue,
-                      final int eventId, final String comedian){
+    public ComedySpec(final String act,
+                      final EventClass eventType,
+                      final Venue venue,
+                      final int eventId,
+                      final String comedian){
         super(act, eventType, venue);
         this.comedian = comedian;
     }
@@ -17,9 +20,16 @@ public class ComedySpec extends EventSpec {
         return comedian;
     }
 
-    public void setComedian(String comedian){
-        this.comedian = comedian;
+    @Override
+    public boolean matches(final EventSpec otherSpec) {
+        if (!(otherSpec instanceof ComedySpec))
+            return false;
+        if (!super.matches(otherSpec))
+            return false;
+        ComedySpec spec = (ComedySpec)otherSpec;
+        return comedian == spec.comedian;
     }
+
 
 
 }

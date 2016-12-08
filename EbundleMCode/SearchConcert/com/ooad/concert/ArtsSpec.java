@@ -7,9 +7,11 @@ public class ArtsSpec extends EventSpec {
 
     private ArtsType artType;
 
-    public ArtsSpec(String act, EventClass eventType, Venue venue,
-                       final int eventId,
-                       final ArtsType artType){
+    public ArtsSpec(final String act,
+                    final EventClass eventType,
+                    final Venue venue,
+                    final int eventId,
+                    final ArtsType artType){
         super(act, eventType, venue);
         this.artType = artType;
     }
@@ -22,5 +24,16 @@ public class ArtsSpec extends EventSpec {
     public void setArtType(ArtsType artType) {
         this.artType = artType;
     }
+
+    @Override
+    public boolean matches(final EventSpec anEvent) {
+        if (!(anEvent instanceof ArtsSpec))
+            return false;
+        if (!super.matches(anEvent))
+            return false;
+        ArtsSpec spec = (ArtsSpec)anEvent;
+        return artType == spec.artType;
+    }
+
 
 }

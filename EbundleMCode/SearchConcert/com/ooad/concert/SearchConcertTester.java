@@ -1,23 +1,27 @@
 package com.ooad.concert;
 
+import javax.swing.*;
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 public class SearchConcertTester {
 
     public static void main(String[] args) {
 
-        EventCatalogue catalogue = new EventCatalogue(new ArrayList<Event>());
+        EventCatalogue catalogue = new EventCatalogue(new LinkedList<Event>());
 
-       initialiseEvents(catalogue);
+        initialiseEvents(catalogue);
 
-        System.out.println("\nLooking for an Ariana Grande Concert...");
-        findMatching(catalogue, new ConcertSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, 20.00, 1233, Genre.POP));
+        // findMatching(catalogue, new ConcertSpec())
+
+        System.out.println("Looking for other shit...");
+
+        findMatching(catalogue, new ConcertSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, 20.00, Genre.POP));
 
 
-
+        
     }
-
 
     private static void findMatching(final EventCatalogue catalogue, final EventSpec whatOwenLikes) {
         List<Event> matchingEvents = catalogue.search(whatOwenLikes);
@@ -28,8 +32,7 @@ public class SearchConcertTester {
                     System.out.println("Owen, you might like this " +
                             eventSpec.getAct() +
                             eventSpec.getVenue() +
-                            eventSpec.getEventClass() +
-                            eventSpec.getDate());
+                            eventSpec.getEventClass());
 
                 }
             }
@@ -43,12 +46,12 @@ public class SearchConcertTester {
     private static void initialiseEvents(EventCatalogue catalogue) {
 
         //Concerts
-        catalogue.addEvent(new ConcertSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, 20.00, 1233, Genre.POP),120,50.90);
-        catalogue.addEvent(new ConcertSpec("Lower Than Atlantis", EventClass.CONCERT, Venue.THREEARENA, 20.00, 1393, Genre.ALTERNATIVE),120,50.90);
-        catalogue.addEvent(new ConcertSpec("The Weeknd", EventClass.CONCERT,Venue.CROKEPARK, 50.90,139494,Genre.RNB),193,63.90);
-        catalogue.addEvent(new ConcertSpec("Oliver Helednes", EventClass.CONCERT,Venue.AVIVASTADIUM, 23.95,13039, Genre.DANCE),29393,50.50);
-        catalogue.addEvent(new ConcertSpec("The Coronas", EventClass.CONCERT, Venue.INEC, 20.50, 19919, Genre.INDIE),39393, 50.90);
-        catalogue.addEvent(new ConcertSpec("Nathan Carter", EventClass.CONCERT,Venue.INEC, 30.50, 19393, Genre.COUNTRY), 393939, 50.90);
+        catalogue.addEvent(new ConcertSpec("Ariana Grande", EventClass.CONCERT, Venue.THREEARENA, 20.00, Genre.POP),120,50.90);
+        catalogue.addEvent(new ConcertSpec("Lower Than Atlantis", EventClass.CONCERT, Venue.THREEARENA, 20.00, Genre.ALTERNATIVE),120,50.90);
+        catalogue.addEvent(new ConcertSpec("The Weeknd", EventClass.CONCERT,Venue.CROKEPARK, 50.90,Genre.RNB),193,63.90);
+        catalogue.addEvent(new ConcertSpec("Oliver Helednes", EventClass.CONCERT,Venue.AVIVASTADIUM, 23.95,Genre.DANCE),29393,50.50);
+        catalogue.addEvent(new ConcertSpec("The Coronas", EventClass.CONCERT, Venue.INEC, 20.50, Genre.INDIE),39393, 50.90);
+        catalogue.addEvent(new ConcertSpec("Nathan Carter", EventClass.CONCERT,Venue.INEC, 30.50, Genre.COUNTRY), 393939, 50.90);
 
         //Arts & Theatre
         catalogue.addEvent(new ArtsSpec("The Field", EventClass.ARTSnTHEATRE, Venue.SIAMSATIRE, 1234, ArtsType.DRAMA),3939, 50.90);

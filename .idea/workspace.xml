@@ -49,8 +49,8 @@
       <file leaf-file-name="CBranchReport.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/CBranchReport.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+            <state relative-caret-position="-52">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -159,6 +159,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -179,9 +182,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -662,7 +662,8 @@
       <workItem from="1481229730101" duration="357000" />
       <workItem from="1481232948679" duration="4346000" />
       <workItem from="1481241441054" duration="61000" />
-      <workItem from="1481282372388" duration="186000" />
+      <workItem from="1481282372388" duration="300000" />
+      <workItem from="1481283305681" duration="203000" />
     </task>
     <task id="LOCAL-00001" summary="OM output folder problem&#10;&#10;Manually configured the output folder as out&#10;Added intellij config files to git&#10;">
       <created>1480950992660</created>
@@ -713,11 +714,18 @@
       <option name="project" value="LOCAL" />
       <updated>1481241492907</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="&#10;Updated Report &#10;&#10;took snapshot of git log and named it t00173201.log and added to my report.&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;">
+      <created>1481282686968</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1481282686968</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="25393000" />
+    <option name="totallyTimeSpent" value="25710000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -797,7 +805,8 @@
     <MESSAGE value="Added screenshot&#10;&#10;Added screenshot of my git log to my report.&#10;Wrote more on Evaluation.&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
     <MESSAGE value="&#10;re-commit screenshot&#10;&#10;forgot to commit screenshot of my git log to my report on my last commit&#10;(ebb5b28).&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
     <MESSAGE value="&#10;Updated Report &#10;&#10;fixed spelling and grammatical errors.&#10;&#10;Updated Introduction and conclusion in report.&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="&#10;Updated Report &#10;&#10;fixed spelling and grammatical errors.&#10;&#10;Updated Introduction and conclusion in report.&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+    <MESSAGE value="&#10;Updated Report &#10;&#10;took snapshot of git log and named it t00173201.log and added to my report.&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="&#10;Updated Report &#10;&#10;took snapshot of git log and named it t00173201.log and added to my report.&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -1227,8 +1236,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/CBranchReport.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="53" column="30" selection-start-line="53" selection-start-column="30" selection-end-line="53" selection-end-column="30" />
+        <state relative-caret-position="-52">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>

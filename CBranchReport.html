@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Dylan's Personal Report</title>
+    <meta charset='utf-8'>
+   
+  </head>
+  <style type="text/css">
+      h1 {
+        text-align: center;
+      }
+      
+  
+  </style>
+  <body>
+  
+  <h1>Dylan's Report</h1>
+      <h2 style="text-align: center; ">Dylan Tik Lun Chan<br>
+          T00173201<br>
+          Computing with Games Development<br></h2>
+       <h2>Team members</h2>
+       <p>Dylan Chan</p>
+       <p>Aoife Saoir</p>
+       <p>Suki Chan</p>
+
+          
+      <h2>Project Title</h2>
+        <p>Ebundle Master</p>
+      
+      <h2>Vision Statement</h2>
+        <p>An e-ticketing system that allows customers to purchase concert and 
+            performance tickets, select date and location of concert, purchase 
+            ticket.In addtion the system offers bundles to customers which 
+            allows them to search for transport such as bus and train, hotel 
+            room and restaurant.
+        </p>
+      
+      <h2>Link to individual github repository </h2>
+        <p>My individual branch was the CBranch located at</p>
+        <a href="https://github.com/AoifeNicAntSaoir/EbundleMaster1.1/tree/CBranch">https://github.com/AoifeNicAntSaoir/EbundleMaster1.1/tree/CBranch"</a>
+      
+      <h2>Link to group github repository</h2>
+        <p>The master branch is located at</p>
+        <a href="https://github.com/AoifeNicAntSaoir/EbundleMaster1.1">https://github.com/AoifeNicAntSaoir/EbundleMaster1.1</a>
+
+      <h2>Snapshot of my own detailed code commit comments from git log </h2>
+        <img src="SnapshotOfGitLog.png" alt="commit details" width="800">
+
+      <h2>Snapshot of my own detailed code commit comments from github desktop </h2>
+        <img src="CBranchCommitScreenshot.png" alt="commit details" width="800">
+
+
+  <h2>Snapshot of git log t00173201.log </h2>
+  <img src="ScreenshotOfGitLog.png" alt="commit details" width="800">
+
+
+      <h2>Domain Model</h2>
+        <img src="DomainModelScreenshot.png" alt="Domain Model" width="800">
+                      
+      <h2>Snapshot of merged commits</h2>
+
+      <h2>Introduction</h2>
+      <p> As a group we first came of with an idea of a online booking ticket system. Then our lecturer suggested that we can add more functions to it
+          to make it more unique so we added functions such as able to search and book for transports,
+          hotels and restaurant. As a group we decided on the name eBundleMaster for our project.
+          As a group we divided list of task for brief, casual and fully dressed use cases.
+          I was tasked with Add to cart, Book Concert, Search for hotel, Select hotel location, Select check-in date,
+          Select check-out date, Select room type, and book hotel (Brief and casual use case).
+          For fully dressed use case i did Add to cart, Book concert, Search for hotel and Book hotel.
+          For coding phase of the project I was tasked with with Search for Hotel.
+          After the list of task has been divided amongst us, we first did brief use case for each use cases ,
+          then the next stage we did casual use case for each use cases and the final stage is the
+          fully dressed use case, for this we picked the most important use cases on our project.</p>
+
+       <h2>Streamlined Object Modeling</h2>
+       <ol>
+          <li>People ==> Customer</li>
+          <li>Event  ==> Search</li>
+          <li>Thing  ==> Room</li>
+          <li>Place  ==> Hotel</li>
+       	
+       </ol>
+
+       <h2> Refactoring</h2>
+       <ol>
+           <li> Performed Code Analysis Using IntellJ, changes I made with Code Analyse: changed for loop in HotelList class to enhance loop, this improves efficency on searching.</li>
+           <li> Removed unused imports.</li>
+           <li> Encapsulation - Refactoring public attributes to private attributes, have public Access methods so outside world can see the instance variable
+                and have public mutator methods so the outside world can change the variables, but under controlled conditions.</li>
+           </ol>
+      
+      <h2>Code Smells</h2>
+          <ol>
+              <li> Created 3 enum class for nameOfHotel, roomType and county, I named the enum classes NameOfHotel, RoomType and County. The reason why I created the 3 enum classes is for type safety. That means that only values in NameOfHotel, RoomTypes and County enum classes are allowed.</li>
+              <li> I also did Shotgun Surgery because I created 2 enum classes I have to make many small changes across Hotel,HotelList and FindHotelTester classes.</li>
+              <li> Primitive Obsession - Got rid of some String types e.g initial nameOfhotel, roomType and county were type String is now enum type.</li>
+              <li> I Added Switch statements and toString methods to enum classes for readability when it outputs data.</li>
+
+          </ol>
+      <h2>Conclusion</h2>
+               <p>In conclusion, I think that this project is interesting and I enjoyed working on it.
+                  As a group we worked very well together, we met up outside of class to work on the project,critique and help each other.
+                  We helped each other when anyone of us encountered difficulties with the project.
+                  There was good communication between team members. Also because we used HTMML to write up our uses cases and report it was a great
+                  experience because I have not done it since first year as a module.</p>
+
+          
+      
+
+  
+
+  </body>
+</html>

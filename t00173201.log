@@ -1,0 +1,606 @@
+commit c8fd3bca420739f61c4bb8aa1d04154219543f7e
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Dec 8 23:58:12 2016 +0000
+
+    Updated Report
+    
+    fixed spelling and grammatical errors.
+    
+    Updated Introduction and conclusion in report.
+
+commit 46e0401e6446e8809212d4ef97490378829ee3bb
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Dec 8 00:31:34 2016 +0000
+
+    re-commit screenshot
+    
+    forgot to commit screenshot of my git log to my report on my last commit
+    (ebb5b28).
+
+commit ebb5b28f265b9cc7b6dce11e51d63fd8ebeb4f17
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Dec 8 00:26:33 2016 +0000
+
+    Added screenshot
+    
+    Added screenshot of my git log to my report.
+    Wrote more on Evaluation.
+
+commit ad874f621e9d4337c010ef063f76c063c91c6032
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Wed Dec 7 00:17:37 2016 +0000
+
+    Forgot to commit new enum class  and screenshot
+    
+    enum class named County for type safety and domain model screenshot.
+    
+    previous commit number: 25dc3d4
+
+commit 4a4a9b02a90b133c9ae0b6452cec47c02212a9e7
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Wed Dec 7 00:10:31 2016 +0000
+
+    Updated report
+    
+    Added Streamlined Object Modeling: People,Event Thing and Place to report.
+    Added Screenshot of my domain model.
+    Added Refractoring.
+
+commit 25dc3d492d9bcc49d081077e1a6afb74db6dc8e0
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Dec 6 20:28:11 2016 +0000
+
+    Added a new enum class updated my report.
+    
+    Added a new enum class named County.
+    
+    Did Code Analysis Changed for loop to enchance for loop for efficency on search and removed unused imports.
+    
+    Did Shotgun Surgery across Hotel,HotelList and FindTester classes.
+    
+    Report:
+    Did Introduction
+
+commit 62c72c8239d35640df9b0aa3eb194f26fc49aef3
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Dec 5 17:42:31 2016 +0000
+
+    Added Initial Personal Report and Screenshot of commit messages
+    
+    Added my Intial Personal Report(.html file) and  Added Screenshot of my
+    commit GitHub messages  to my report.
+
+commit 626e1cc58fe8d44c8290fe240e01aa49d3b31e74
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Dec 5 17:34:28 2016 +0000
+
+    Changed checkInDate and checkOutDate to Type String.
+
+commit 3bf31c02d347171c2d2954fc1d5f161e8b8bc2f5
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Dec 5 15:16:32 2016 +0000
+
+    OM output folder problem
+    
+    Manually configured the output folder as out
+    Added intellij config files to git
+
+commit 114cc616fc98956c5c1b3634c554096bded32067
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Dec 5 14:35:21 2016 +0000
+
+    no changes were made.
+
+commit e1e79904aa98707bcb46abf842ba8e1d6e2c1e54
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Dec 5 14:25:28 2016 +0000
+
+    Revert "Added initial Personal Report and made changes to three classes"
+    
+    This reverts commit 8fe68e62385a4ce41b741b54f8f2d5e7041f9136.
+
+commit 8fe68e62385a4ce41b741b54f8f2d5e7041f9136
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Dec 5 14:23:09 2016 +0000
+
+    Added initial Personal Report and made changes to three classes
+    
+    Added my initial Personal report(as .html file) and took a screenshot
+    of my commit messages and added to my initial personal report.
+    
+    Uncommented checkIndate and checkOutDate for all 3 classes(Hotel,
+    HotelList and FindHotelTester).
+
+commit b5e653ce4178b9b38d14b80f186624bf5357f01a
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 28 22:27:16 2016 +0000
+
+    Commented Out checkInDate and checkOutDate
+    
+    After Commented out the checkInDate and checkOutDate, the
+    FindHotelTester class now works it displays the details.
+    
+    Need to find out how to display the date for checkInDate and
+    checkOutDate.
+
+commit 7fedbeefdb3cf2707d4d1c88405036605cbb98b1
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 28 21:26:02 2016 +0000
+
+    Restructured FindHotelClass and removed extra brackets from HotelList
+    
+    Restructured  FindHotelTester Class so its more readably and removed
+    extra brackets from HotelList.
+
+commit 73b7ebf7be9a591368765e1c92dafbc179d2c552
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 28 20:46:46 2016 +0000
+
+    Added Enum Class
+    
+    Added Enum Class named RoomType
+    For improved Type safety.
+
+commit 8265c3c6e1b882a9d69491d4aaa1a0f970c42624
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 28 15:49:15 2016 +0000
+
+    Added enum Class
+    
+    Added Enum class named NameOfHotel, The reason is for Type Safety.
+
+commit 40bb10884e7709bb97d2fcea278633c535796124
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 28 15:10:48 2016 +0000
+
+    Changed Attribute Type for hotelID and checkInDate and checkOutDate
+    
+    Changed hotelId attribute type to int
+    and checkInDate and checkOutDate to Calendar.
+
+commit 73683f3cab9aa396f7064ce6e728396debd42a54
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Sat Nov 26 16:28:29 2016 +0000
+
+    Changed attribute type for checkInDate and CheckOutDate and Wrote some code for tester class
+    
+    Changed Attribute Type of CheckInDate and CheckOutDate from Date to
+    String.
+    
+    Wrote Some Code to FindHotelTester Class to see if it works.
+
+commit 5a13a341ff124c9dede0e4717c3e57544bea1c56
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 21 15:58:27 2016 +0000
+
+    For HotelList class
+    
+    i Added code to HotelList Class  to search for hotels.
+
+commit 189c5f53ecb321dbbfbc3b86708e87bd12e15717
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 21 14:58:53 2016 +0000
+
+    set attributes to private
+    
+    Changed attributes in Hotel Class  from public to private.
+
+commit b239dcf93e92eba485747e8a4d95d903a43bfae4
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 21 14:48:46 2016 +0000
+
+    Added Three Class to GitHub
+    
+    Hotel class, HotelList class and FindHotelTester class.
+
+commit 6a93c01fc62d2964790e699a222786ea7164f0d5
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Nov 17 17:54:56 2016 +0000
+
+    Added new fully dressed use case
+    
+    added Search For Hotel fully dressed use case
+    Use case number 6.
+
+commit 9efa5c72904741592008c58b8267b117c4babaef
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 7 15:49:24 2016 +0000
+
+    added my critique
+
+commit 1f137a3ce967f191b94b2bef0195e468aa98bcb5
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 7 15:32:23 2016 +0000
+
+    Deleted Book Transport use cases
+
+commit 041f3904f7f40a816084f2232234148c4d2ca9a3
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 7 15:24:32 2016 +0000
+
+    Deleted 3 files
+    
+    These files are no longer needed.
+
+commit 1cdd46a89ea49bf9adbb56e311c21e3baf78c339
+Merge: edb99a7 cb1e901
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 7 15:18:31 2016 +0000
+
+    Merge branch 'master' into CBranch
+
+commit edb99a7a1aa5b3a937172306d4f056558e58c7f0
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 7 15:14:48 2016 +0000
+
+    Moved files to C Fully Dressed  Use Case folder
+    
+    Each Fully Dressed Use Case is now in seperate files.
+
+commit f2d83f0b7e00cf58452acf2fb7fb15f820874e3b
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 7 15:03:09 2016 +0000
+
+    moved files to C casual use case folder
+    
+    each Casual use case is now in separate files
+
+commit db72b19f5094527148ab600f5fbe0efd1873912a
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 7 14:47:39 2016 +0000
+
+    moved files to C Brief use case folder
+    
+    each use case is now in seperate file.
+
+commit cb1e9013e722b0b0ff6629f4fc5d697802b9c5ad
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Mon Nov 7 14:22:09 2016 +0000
+
+    Added links to each branch on Github for easy access
+    
+    master, A branch, b branch and c branch links
+
+commit f7b588a590b95afcbbc7743a10a14917af06e3c5
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Nov 7 14:15:32 2016 +0000
+
+    added new folder
+    
+    added new folder for brief, causal and fully dressed use case.
+
+commit bb011e11b25807b404966ae23345175d0b4abff0
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Oct 31 16:55:27 2016 +0000
+
+    Added new fully use case
+    
+    Added:  Add to cart fully use case.
+    Deleted unnecessary Heading for Use Case.
+
+commit d70057e4b2d85b5cf97a519b9cb78d89213127d6
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Oct 31 16:34:04 2016 +0000
+
+    Made changes to Fully Dressed use case.
+    
+    renamed Use case name,Id and priority and also made changes to
+    description.(Book concert).
+    Deleted Search Hotel room.
+    Added stakeholders and interest for each fully use case.
+    Made changes to Book transport fully dressed use case.
+    Restructured Fully Use Case.(numbering)
+    Made a small word change to book hotel casual use case.
+
+commit 6fa469b81c41eb584fdffd2ae0d641edad2e8758
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Oct 31 15:12:52 2016 +0000
+
+    Added Add to cart and fixed spelling errors
+    
+    Added: Add to cart to casual use case.
+    corrected spelling errors.
+
+commit 9d69954a5079f3ea587da3c2a185c363f45ed6d3
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Oct 27 14:35:24 2016 +0100
+
+    added new casual use case
+    
+    added: search hotel, location, check-in date, check out date, room
+    type, book hotel
+    
+    renamed purchase concert/performance tickets to book concert
+
+commit ce450e75e5611029d99b2244ae8910c4db6bd894
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Thu Oct 27 14:02:39 2016 +0100
+
+    Error in search for concert date
+
+commit 3a82ab2506e0f5b56807aa671c567e9e87798393
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Thu Oct 27 13:53:49 2016 +0100
+
+    Gramatical errors
+    
+    Got rid of "Select For"
+
+commit 2b5d8c71c30e1ca76ffb6cabedf58a8363017ac9
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Thu Oct 27 13:43:48 2016 +0100
+
+    Updating search for restraunt
+    
+    Search restaurant type  changed
+    Spelling of restaurant fixed
+
+commit 97eb8680a1495e52ec45bfee4446ee6ef92f4ef4
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Oct 27 13:34:03 2016 +0100
+
+    removed duplicated use case
+    
+    removed duplicated “Select hotel location ”
+
+commit 344e7f85d1c0f0d00208478bf5c73414457f2914
+Merge: b1db314 6c0c4da
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Oct 27 13:30:15 2016 +0100
+
+    Merge branch 'master' into CBranch
+
+commit b1db3143e0c50aa8218e77c2a22d58213941eab8
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Oct 27 13:29:37 2016 +0100
+
+    added new use case to brief use case.
+    
+    Added new use case: Add to cart.
+    Restructured description for Book Concert.
+
+commit 6c0c4daf0039832166f65f7ae39e6274ea82b39c
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Thu Oct 27 13:28:21 2016 +0100
+
+    Added arrival location & departure location
+    
+    Refactored uc ids
+
+commit d901beae61125d0f6b0f8a9dafc67ad66ede065b
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Oct 27 13:13:57 2016 +0100
+
+    added new brief use case
+    
+    added 5 new brief use case under Search Hotel.
+
+commit e5bc291e99c175a605de6dbef8375f578c531289
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Thu Oct 27 13:01:14 2016 +0100
+
+    task assignment - dylan book transport
+
+commit b847b0656361a571f913f47d17a92bd4fe03c794
+Author: Aoife S <aoifesayers@gmail.com>
+Date:   Thu Oct 27 12:59:40 2016 +0100
+
+    Fully Dressed Use Case Template
+    
+    Feel free to use this for your use cases
+
+commit 7235793da672557db7b762cb08059c53e44b27f3
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Thu Oct 27 12:58:17 2016 +0100
+
+    Dylan - book concert task assignment
+
+commit 3b55a53de16af861ee6d6cf555b250380548760f
+Merge: 0cd27b4 f67b486
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Thu Oct 27 12:51:23 2016 +0100
+
+    Merge branch 'master' into CBranch
+
+commit f67b486254d571984214c9bec5d4b8ebccd7fc83
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Thu Oct 27 12:49:04 2016 +0100
+
+    UC ID & priorities added
+
+commit 674588ccbca8a8c5fd2cf1a989ebdc63162d5373
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Thu Oct 27 12:38:18 2016 +0100
+
+    More use cases
+    
+    Assigned more tasks to each person
+
+commit 0cd27b4a1bfe3def5ad5ae13d30f0e7eae4c90c1
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Wed Oct 26 17:29:14 2016 +0100
+
+    made changes to casual and fully dressed UC
+    
+    added new alternate scenario to casual use case and fully dressed use
+    case
+
+commit 008fb7b7de270654d544b2bfc82a54f9af36bb1b
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Wed Oct 26 17:10:49 2016 +0100
+
+    Added 3 new fully dressed use case
+    
+    Added fully dressed use case: Book transport, search hotel rooms and
+    book hotel.
+    Made changes to participating actors.
+
+commit 65c8c1d1119778ce421ce4680a92e55585b05556
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Wed Oct 26 15:11:57 2016 +0100
+
+    Made Changes to purchase/concert performance tickets
+    
+    Added post conditions and business rules.
+
+commit af8b0c9f7e80602296a306bad0335d1de2977e41
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 20:04:26 2016 +0100
+
+    Created a new file and added fully dressed use case
+    
+    created a new file: CFullyDressedUseCase.html .
+    Added Full Dressed Use Case: Purchase concert/performance tickets.
+
+commit f913cd8c9029bb9e31c0a5666e556fe75af0ac2e
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 19:15:55 2016 +0100
+
+    deleted BriefUseCase.html
+    
+    It is duplicated file
+
+commit fad36c3da2bdaafc3669d4b54908ba85745a12d0
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 19:12:10 2016 +0100
+
+    renamed file name
+    
+    renamed CasualUseCase to CCasualUseCase.
+
+commit 0235849ed15afc541ab50205585a375bde42d70c
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 19:10:50 2016 +0100
+
+    renamed file name
+    
+    renamed BriefUseCase to CBriefCase.
+
+commit 8e7ad4eb4e2d4575e35c58e47f7fd2cb382b0453
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 19:05:21 2016 +0100
+
+    deleted c.html
+
+commit 4cdefee845bdb93fb119ecf1f7bfb51f3c3fb6be
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 19:03:48 2016 +0100
+
+    Created new file and added Casual use case
+    
+    Created CasualUseCase.html .
+    Added Casual Use Case: purchase concert/performance tickets, book
+    transport, search hotel rooms and book hotel .
+
+commit f10e8dc2f5ed1df10aa98bfdf24c4247054d43ed
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 18:55:20 2016 +0100
+
+    deleted casual use case and renamed file name
+    
+    deleted casual use case, and renamed c.html to BriefUseCase.html .
+
+commit ecb8291df6403ea46896c537d66be89730c98cf8
+Merge: 215023d ac991c7
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 18:38:49 2016 +0100
+
+    Merge branch 'master' into CBranch
+
+commit 215023d9fd6591391dedf3bbf600490bafe9e14f
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Tue Oct 25 18:35:29 2016 +0100
+
+    Added Causal Use Cases
+    
+    Added Casual Use Cases: concert/performance tickets, book transport,
+    hotel rooms and book hotel.
+
+commit 6127df8fd90945fd311fd270c40f19bc02188143
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Oct 24 18:16:41 2016 +0100
+
+    Added brief use case
+    
+    Added Purchase Concert/performance , Book Transport, Search for Hotel
+    Room and Book Hotel.
+
+commit 7c9dcdd0069c5d33680fc0a16ccea5a98bd690ea
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Oct 24 18:05:46 2016 +0100
+
+    changed to c.html
+
+commit ac991c74a05f90baffa804f20d43667a1ecf2768
+Merge: 81942d3 75142d4
+Author: Aoife S <aoifesayers@gmail.com>
+Date:   Mon Oct 24 17:33:13 2016 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/BBranch'
+
+commit 75142d43cbe92a61da82e1c6b62b41fdccbf2c2d
+Author: SukiTKChan <sukitkchan@gmail.com>
+Date:   Mon Oct 24 17:29:31 2016 +0100
+
+    Suki's Initial Commit
+    
+    pulled file from master
+    Added B.txt file
+    commit to BBranch
+
+commit 81942d32a1510b8e07b59b9972f9bb4aab25319e
+Merge: 39211d1 6da8023
+Author: Aoife S <aoifesayers@gmail.com>
+Date:   Mon Oct 24 17:28:09 2016 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/CBranch'
+
+commit 39211d1c881a15aa4ec3e0dbd8bae29d567d255e
+Merge: c18e11d f72f9ce
+Author: Aoife S <aoifesayers@gmail.com>
+Date:   Mon Oct 24 17:18:14 2016 +0100
+
+    Merge remote-tracking branch 'refs/remotes/origin/ABranch'
+
+commit 6da8023d45110628b9f968ad145179529bea58e2
+Author: Dylan Chan <dillchan10@gmail.com>
+Date:   Mon Oct 24 17:14:20 2016 +0100
+
+    added c.txt.
+    
+    added c.txt to C Branch.
+
+commit c18e11dce4b79ff3f1ba1fbcf181d5163d1f69f5
+Author: Aoife S <aoifesayers@gmail.com>
+Date:   Mon Oct 24 17:14:16 2016 +0100
+
+    a
+
+commit f72f9ce1c3e5ef4c79bec10664b7a08ae4ab644a
+Merge: 2fbf564 4d2e50f
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Mon Oct 24 17:13:57 2016 +0100
+
+    Merge pull request #1 from AoifeNicAntSaoir/master
+    
+    Master
+
+commit 4d2e50f7e62617a5c4511886cdd7c18fc028e1cd
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Mon Oct 24 15:57:23 2016 +0100
+
+    Add a.txt by Aoife
+
+commit ec2381ec1239a16439af74749f2e62af7ad702ba
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Mon Oct 24 15:43:31 2016 +0100
+
+    Initial Commit
+    
+    Vision Statement & Tasks
+
+commit 2fbf564f3501882d793e1ada6f7debeeca0fc3b8
+Author: Aoife <aoifesayers@gmail.com>
+Date:   Mon Oct 24 15:42:18 2016 +0100
+
+    :circus_tent: Added .gitattributes & .gitignore files

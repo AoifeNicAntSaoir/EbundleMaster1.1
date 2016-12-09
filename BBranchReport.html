@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Suki's Personal Report</title>
+    <meta charset='utf-8'>
+   
+  </head>
+  <style type="text/css">
+      h1 {
+        text-align: center;
+      }
+      
+  
+  </style>
+  <body>
+  
+  <h1>Suki's Report</h1>
+      <h2 style="text-align: center; ">Suki Tsz Ki Chan<br>
+          T00183011<br>
+          Computing with Games Development<br></h2>
+          
+      <h2>Project Title</h2>
+        <p>Ebundle Master</p>
+		
+	  <h2>Team members</h2>
+		<p>Aoife Sayers - A</p>
+		<p>Suki Chan - B</p>
+		<p>Dylan Chan - C</p>
+      
+      <h2>Vision Statement</h2>
+        <p>An e-ticketing system that allows customers to purchase concert and 
+            performance tickets, select date and location of concert, purchase 
+            ticket.In addition the system offers bundles to customers which
+            allows them to search for transport such as bus and train, hotel
+            room and restaurant.
+        </p>
+		
+	   <h2>Introduction</h2>
+		<p>As a group we first came up with the idea of an eticket system. 
+		   After consulting with our lecturer we decided we need to add extra 
+		   features such as offering to search for Hotel, Transport and Restaurant. 
+		   We then name our system EBundleMaster.  We first came up with a list of 
+		   brief use cases, then we divided among each member of the team. I was 
+		   tasked to write use cases on the following:
+		   <ul>
+		   <li>Account Log-In</li>
+           <li>Search for concert/performance genre</li>
+           <li>Search for restaurant</li>
+           <li>Search for restaurant type</li>
+           <li>Book Restaurant</li>
+           <li>Confirm Booking Detail</li>
+		   </ul> 
+		   After writing brief use cases, I developed them into casual, then into fully-dressed. 
+		   My team then conducted a critique on my fully-dressed use cases and gave their feedback and 
+		   recommendations for improvement.I then made changes to each full-dressed use cases according 
+		   to those feedback.  
+		</p>
+		
+	  <h2>Search for restaurant</h2>
+		<p>I chose Search for restaurant component to developed further on. I first identified the four types of nouns, i.e.
+		<ul>
+			<li>People - Customer</li>
+			<li>Event - Search for Restaurant</li>
+			<li>Place - Restaurant</li>
+			<li>Thing - Table (to book a table)</li>
+		</ul>
+		   When I initially start writing code to do the search, I followed a similar approach to Rick's Guitar.
+		   I started off with three Classes, Restaurant, RestaurantList and FindRestaurantTester.
+		</p>
+		
+	  <h2>Snapshot of my Domain Model </h2>
+        <img src="B-DomainModel.png" alt="Domain Model" width="900">
+
+	  <h2>S.O.L.I.D Principles</h2>
+		<ol>
+			<li>S - Single-responsibility principle: A class should only have one reason to change</li>
+			<li>O - Open-closed principle: A class should be easily extendable without modifying the class itself</li>
+			<li>L - Liskov subsitution principle: Subclasses should be substitutable for their base class</li>
+			<li>I - Interface segregation principle: Classes should not be forced to implement interfaces they don't use</li>
+			<li>D - Dependency Inversion principle: Entities must depend on abstractions not on concretions</li>
+		</ol>
+		<p>In my search for restauarant program, I have applied Single-responsibility principle
+		   and Dependency Inversion principle by creating Restaurant and RestaurantList classes.			   
+		   Restaurant class models a restaurant object and RestaurantList class in charge of storing and finding list
+		   of restaurants.
+		</p>	
+		
+	  <h2>Code Smells</h2>
+		<ol>
+			<li>Primitive Obsession: Use of primitives instead of small objects for simple tasks.</li>
+			<li>Type Safety: Ensures that program behaviors are well defined.</li>
+			<li>Data Class: A class that contains only fields and crude methods for accessing them.</li>
+			<li>Shotgun Surgery: making any modification requires to make many small changes to different classes.</li>
+			<li>Feature Envy: A method accesses the data of another object more than its own data.</li>
+			<li>Inappropriate Intimacy: One class uses the internal fields and methods of another class.</li>
+		</ol>
+		<p>In my search for restauarant program, I have removed smells like Primitive Obssession and shotgun surgery by creating enum classes for
+           Restaurant Type,restaurant location and restaurant name. This will ensure type safety and no need type casting. I have also used generic types
+		   on my Restaurant object for better code re-usability.
+    	</p>
+	  <h2>Refactoring</h2>
+		<p>Refactoring reduce the risk of introducing errors, improving code readability and reduced complexity. 
+		   In my program I used encapsulate field (Restaurant Class), making attribute private and allows access to the field with getter and setter
+			method. I also used enhanced for loop instead of an iterator. This improves the readability and clarity of my code.
+		</p>
+	  <h2>Conclusion</h2>
+        <p>The project has been interesting. As a team we collaborated well. We communicated since the start and we would meet often to discuss our
+		   progress. We would also give feedback on each other's work which really helped when I was writing my use cases. I have learned to use 
+		   new tool such as Github for version control and I found this very useful in tracking what I did previously. I learned that writing 
+		   good and meaningful commit messages is very important as it allows others to understand what I have done. I also learned the importance of
+			refactoring my code to make it readable and less complex.
+		</p>
+	  
+		<p> </p>
+      <h2>Link to individual github repository </h2>
+        <p>My individual branch was the BBranch located at</p>
+        <a href="https://github.com/AoifeNicAntSaoir/EbundleMaster1.1/tree/BBranch">https://github.com/AoifeNicAntSaoir/EbundleMaster1.1/tree/BBranch</a>
+      
+      <h2>Link to group github repository</h2>
+        <p>The master branch is located at</p>
+        <a href="https://github.com/AoifeNicAntSaoir/EbundleMaster1.1">https://github.com/AoifeNicAntSaoir/EbundleMaster1.1</a>
+      
+      <h2>Snapshot of my Github commit messages </h2>
+        <img src="BBranchCommitScreenshot.png" alt="commit details" width="800">
+		<img src="B-GitLogScreenshot.png" alt="commit details" width="800">
+		<p>See myGitLog.txt for more commit messages</p>
+                      
+      <h2>Snapshot of merged commits</h2>
+      
+      
+          
+  </body>
+</html>

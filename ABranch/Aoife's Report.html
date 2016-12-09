@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <title>Aoife's Personal Report</title>
+    <meta charset='utf-8'>
+   
+  </head>
+  <style type="text/css">
+      body {
+      font-family: 'Arial', sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      
+      h2, p, a, ol, ul, img{
+      margin-left: 50px;
+      margin-top: 25px;
+      }
+      
+      ol {
+        line-height: 25px;
+      }
+      
+    
+  
+  </style>
+  <body>
+  
+  <h1>Aoife's Report</h1>
+      <h2 style="text-align: center; ">Aoife Sayers<br>
+          T00170881<br>
+          Computing with Multimedia<br></h2>
+          
+      <h2>Project Title</h2>
+        <p>Ebundle Master</p>
+      
+      <h2>Vision Statement</h2>
+        <p>An e-ticketing system that allows customers to purchase concert and 
+            performance tickets, select date and location of concert, purchase 
+            ticket.In addtion the system offers bundles to customers which 
+            allows them to search for transport such as bus and train, hotel 
+            room and restaurant.
+        </p>
+        
+      <h2>Domain Model</h2>
+        <img src="SearchForConcertDomModel.png" alt="Domain Model" width="800">
+        
+      
+      <h2>Link to individual github repository </h2>
+        <p>My individual branch was the ABranch located at</p>
+        <a href="https://github.com/AoifeNicAntSaoir/EbundleMaster1.1/tree/ABranch">https://github.com/AoifeNicAntSaoir/EbundleMaster1.1/tree/ABranch</a>
+      
+      <h2>Link to group github repository</h2>
+        <p>The master branch is located at</p>
+        <a href="https://github.com/AoifeNicAntSaoir/EbundleMaster1.1">https://github.com/AoifeNicAntSaoir/EbundleMaster1.1</a>
+      
+      <h2>Snapshot of your own detailed code commit comments </h2>
+        <img src="commitSnapshot.png" alt="commit details" width="800">
+        
+      <h2>Git Log file from the a branch</h2>
+          <a href="t00170881.txt">Please see t00170881.txt for the full log</a> <br>
+          <img src="logSnapshot.png" alt="log snapshot" width="800">
+                      
+      <h2>Snapshot of merged commits</h2>
+      
+      
+<h2>Initial Code Smells Identified</h2>
+<ol>
+    <li>Type Safety Issues
+        <ul>
+            <li>Resolved by using Generics e.g. in lists List &lt;EventSpec&gt;</li>
+            <li>Casting - for strong type checks at rutinme e.g. - (ConcertSpec)eventSpec; </li>
+        </ul>
+    </li>
+    <li>Value Safety Issues  & Primative Obsession
+        <ul>
+            <li>Resolved by using enums - Venue, SportsType, Genre, ArtsType - Define a set of valid values</li>
+        </ul>
+    </li>
+    <li>Feature Envy & Coupling Issues</li>
+    <li>Unreadable Code
+        <ul>
+            <li>Too many if statements and code never gets exercised</li>
+        </ul>
+    </li>
+    <li>Poor Naming Conventions
+         <ul>
+            <li>Unreadable variable names - refactored and safely renamed each variable</li>
+        </ul>
+    </li>
+    <li>Dependency Injection Principle</li>
+    <li>Temporary Fields
+          <ul>
+              <li>Initially had a temporary field inside the for loop so I changed the for loop to an Enhanced for loop</li>
+          </ul>
+    </li>
+    <li>Indecent Exposure & Encapsulation
+          <ul>
+              <li>Initially had too many attributes as public & the parameters in lower level were not finalised</li>
+              <li>To resolve this, I decided to encapsulate the fields/attributes in each of the classes to private access. They can be accessed by get & set methods</li>
+              <li>I also finalised the parameters in the lower level Spec classes as they do not extend to more classes</li>
+              <li>I made the matches method private in the SearchConcertTester  so that it can only be called in that class</li>  
+          </ul>
+    </li>
+    <li>Large Class & Long Methods 
+          <ul>
+              <li>Tester class was initially too long - realised I needed a Catalogue class for some of the functionality</li>
+          </ul>
+    </li>
+    <li>Duplicate Code & Long Parameter Lists & Shotgun Surgery
+           <ul>
+                <li>Initially had duplicate code each of the Spec classes ie. ConcertSpec, ComedianSpec, SportsSpec, ArtsSpec classes - made for very long parameter lists when typing out</li>
+                <li>Decided to implement an upper abstract class - EventSpec as a upper level class to model the classes below it</li>
+                <li>Each of the Spec classes extend from Event Spec class</li>
+                <li>Lower level spec classes define their own attributes as well as the upper level EventSpec class. For example ConcertSpec has it's own genre of type Enum,
+                    ConcertSpec has a comedian of type String etc.</li>
+          </ul>
+    </li>
+</ol>
+
+<h2>Principles Used</h2>
+    <ol>
+        <li>DIY - Do It Yourself!</li>
+        <li>S.O.L.I.D Principles
+        		<ol>
+        			<li>S - Single-responsibility principle: A class should only have one reason to change</li>
+        			<li>O - Open-closed principle: A class should be easily extendable without modifying the class itself</li>
+        			<li>L - Liskov subsitution principle: Subclasses should be substitutable for their base class</li>
+        			<li>I - Interface segregation principle: Classes should not be forced to implement interfaces they don't use</li>
+        			<li>D - Dependency Inversion principle: Entities must depend on abstractions not on concretions</li>
+        		</ol>
+        </li>
+        <li>Encapsulation</li>
+        <li>Abstraction</li>
+        <li>Interface segregation principle</li>
+    </ol>
+      
+      <h2>Evaluation</h2>
+          <ol>
+              <li> Agile Methodology to creating this project</li>
+              <li> Good communication with team members </li>
+              <li>Please note I have also added the fully dressed use cases to a github page located at <a href="https://aoifenicantsaoir.github.io/">https://aoifenicantsaoir.github.io/</a>
+              
+          </ol>
+          
+      
+
+  
+
+  </body>
+</html>
